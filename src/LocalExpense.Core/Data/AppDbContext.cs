@@ -1,4 +1,5 @@
 using LocalExpense.Models;
+using LocalExpense.Services;
 using Microsoft.EntityFrameworkCore;
 
 namespace LocalExpense.Data;
@@ -28,8 +29,8 @@ public class AppDbContext : DbContext
     {
         modelBuilder.Entity<Transaction>(e =>
         {
-            e.Property(t => t.Category).IsRequired().HasMaxLength(100);
-            e.Property(t => t.Note).HasMaxLength(500);
+            e.Property(t => t.Category).IsRequired().HasMaxLength(TransactionService.MaxCategoryLength);
+            e.Property(t => t.Note).HasMaxLength(TransactionService.MaxNoteLength);
             e.HasIndex(t => t.Date);
         });
     }

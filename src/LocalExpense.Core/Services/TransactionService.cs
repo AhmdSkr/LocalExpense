@@ -9,6 +9,9 @@ public class TransactionService(IDbContextFactory<AppDbContext> factory)
     public const int MaxCategoryLength = 100;
     public const int MaxNoteLength = 500;
 
+    /// <summary>The largest magnitude an amount may have, in minor units (999,999,999.99 with two decimals).</summary>
+    public const long MaxAmountMinor = 99_999_999_999;
+
     public async Task<List<Transaction>> GetAllAsync(CancellationToken ct = default)
     {
         await using var db = await factory.CreateDbContextAsync(ct);
@@ -60,6 +63,31 @@ public class TransactionService(IDbContextFactory<AppDbContext> factory)
         db.Transactions.Add(transaction);
         await db.SaveChangesAsync(ct);
         return transaction;
+    }
+
+    /// <summary>Validates every row, then inserts them all in one transaction. Nothing is written if any row is invalid.</summary>
+    /// <returns>How many rows were added.</returns>
+    public async Task<int> AddRangeAsync(IReadOnlyCollection<Transaction> rows, CancellationToken ct = default)
+    {
+        foreach (var row in rows)
+        {
+            Validate(row);
+        }
+
+        if (rows.Count == 0)
+        {
+            return 0;
+        }
+
+        await using var db = await factory.CreateDbContextAsync(ct);
+        foreach (var row in rows)
+        {
+            row.Id = 0;
+        }
+
+        db.Transactions.AddRange(rows);
+        await db.SaveChangesAsync(ct);
+        return rows.Count;
     }
 
     /// <returns>false if no transaction with that Id exists.</returns>
@@ -119,16 +147,32 @@ public class TransactionService(IDbContextFactory<AppDbContext> factory)
         return await db.Transactions.Select(t => t.Category).Distinct().OrderBy(c => c).ToListAsync(ct);
     }
 
-    private static void Validate(Transaction t)
+    /// <summary>
+    /// The rules every saved transaction obeys, one message per broken rule; empty when it can be saved. Expects a transaction
+    /// that has been through <see cref="Transaction.Normalize"/>. The service and the CSV importer both check with these.
+    /// </summary>
+    public static List<string> Problems(Transaction t) =>
+        new[] { AmountProblem(t.AmountMinor), CategoryProblem(t.Category), NoteProblem(t.Note) }.OfType<string>().ToList();
+
+    public static string? AmountProblem(long minor) =>
+        minor == 0 ? "Amount cannot be zero"
+        : minor is > MaxAmountMinor or < -MaxAmountMinor ? $"Amount must be between {Money.Format(-MaxAmountMinor)} and {Money.Format(MaxAmountMinor)}"
+        : null;
+
+    public static string? CategoryProblem(string category) =>
+        category.Length == 0 ? "Category is required"
+        : category.Length > MaxCategoryLength ? $"Category cannot exceed {MaxCategoryLength} characters"
+        : null;
+
+    public static string? NoteProblem(string? note) =>
+        note is { Length: > MaxNoteLength } ? $"Note cannot exceed {MaxNoteLength} characters" : null;
+
+    // Normalizes the caller's object in place, so what is saved is what the caller now holds.
+    private static void Validate(Transaction transaction)
     {
-        if (t.AmountMinor == 0)
-            throw new ArgumentException("Amount cannot be zero.", nameof(t));
-        if (string.IsNullOrWhiteSpace(t.Category))
-            throw new ArgumentException("Category is required.", nameof(t));
-        t.Category = t.Category.Trim();
-        if (t.Category.Length > MaxCategoryLength)
-            throw new ArgumentException($"Category cannot exceed {MaxCategoryLength} characters.", nameof(t));
-        if (t.Note is { Length: > MaxNoteLength })
-            throw new ArgumentException($"Note cannot exceed {MaxNoteLength} characters.", nameof(t));
+        transaction.Normalize();
+        var problems = Problems(transaction);
+        if (problems.Count > 0)
+            throw new ArgumentException(string.Join("; ", problems) + ".", nameof(transaction));
     }
 }

@@ -127,6 +127,50 @@ public class TransactionServiceValidationTests : IDisposable
         Assert.Equal(1, RowCount());
     }
 
+    // The same normalization as Transaction.Create and the CSV importer, so no write path stores "   " or " lunch ".
+    [Theory]
+    [InlineData("   ", null)]
+    [InlineData("  lunch  ", "lunch")]
+    public async Task Add_TrimsTheNoteAndStoresABlankOneAsNull(string note, string? expected)
+    {
+        var t = Valid();
+        t.Note = note;
+
+        var saved = await _service.AddAsync(t);
+
+        using var db = _factory.CreateDbContext();
+        Assert.Equal(expected, await db.Transactions.Where(x => x.Id == saved.Id).Select(x => x.Note).SingleAsync());
+    }
+
+    [Theory]
+    [InlineData(TransactionService.MaxAmountMinor)]
+    [InlineData(-TransactionService.MaxAmountMinor)]
+    public async Task Add_AcceptsAnAmountAtTheLimit(long amount)
+    {
+        var t = Valid();
+        t.AmountMinor = amount;
+
+        await _service.AddAsync(t);
+
+        Assert.Equal(1, RowCount());
+    }
+
+    // The edit dialog cannot show more than this, so nothing beyond it may be stored.
+    [Theory]
+    [InlineData(TransactionService.MaxAmountMinor + 1)]
+    [InlineData(-TransactionService.MaxAmountMinor - 1)]
+    [InlineData(long.MinValue)]
+    public async Task Add_RejectsAnAmountBeyondTheLimit(long amount)
+    {
+        var t = Valid();
+        t.AmountMinor = amount;
+
+        var ex = await Assert.ThrowsAsync<ArgumentException>(() => _service.AddAsync(t));
+
+        Assert.Contains("$999,999,999.99", ex.Message);
+        Assert.Equal(0, RowCount());
+    }
+
     // Update runs the same validation; spot-check that it is wired in and leaves the row alone.
     [Fact]
     public async Task Update_AppliesTheSameValidationAndLeavesTheRowUnchanged()

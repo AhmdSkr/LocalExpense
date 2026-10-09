@@ -16,6 +16,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\src\LocalExpense.Core\LocalExpense.Core.csproj" />
+    <ProjectReference Include="..\..\tools\LocalExpense.Cli\LocalExpense.Cli.csproj" />
   </ItemGroup>
 
   <ItemGroup>

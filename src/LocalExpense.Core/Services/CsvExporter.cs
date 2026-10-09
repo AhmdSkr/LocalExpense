@@ -18,7 +18,8 @@ public static class CsvExporter
     /// <summary>
     /// Writes the header and one record per transaction, each ended by CRLF. Amount is the signed major-unit
     /// value (-45.25). Category and Note that start with = + - @ tab or CR get a leading apostrophe so a spreadsheet
-    /// shows them as text instead of evaluating a formula; the apostrophe stays visible in the CSV and when imported.
+    /// shows them as text instead of evaluating a formula (see <see cref="NeedsFormulaGuard"/>). The apostrophe stays visible
+    /// in a spreadsheet; <see cref="CsvImporter"/> removes it again.
     /// </summary>
     public static void Write(IEnumerable<Transaction> transactions, TextWriter writer)
     {
@@ -84,8 +85,15 @@ public static class CsvExporter
         return new string(chars);
     }
 
+    /// <summary>
+    /// True when the text starts with a formula character, or with an apostrophe in front of text that is itself guarded
+    /// ('=x). Guarding the second kind too is what lets the importer undo every guard exactly, so '=x survives a round trip.
+    /// </summary>
+    internal static bool NeedsFormulaGuard(ReadOnlySpan<char> text) =>
+        text is [('=' or '+' or '-' or '@' or '\t' or '\r'), ..] || (text is ['\'', ..] && NeedsFormulaGuard(text[1..]));
+
     private static string GuardFormula(string? text) =>
-        text is [('=' or '+' or '-' or '@' or '\t' or '\r'), ..] ? "'" + text : text ?? string.Empty;
+        text is null ? string.Empty : NeedsFormulaGuard(text) ? "'" + text : text;
 
     private static string Escape(string field) =>
         field.AsSpan().IndexOfAny(",\"\r\n") >= 0 ? "\"" + field.Replace("\"", "\"\"") + "\"" : field;

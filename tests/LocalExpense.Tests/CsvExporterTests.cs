@@ -72,6 +72,8 @@ public class CsvExporterTests
     [InlineData("@cmd", "'@cmd")]
     [InlineData("\tx", "'\tx")]
     [InlineData("a=b", "a=b")]            // only the first character matters
+    [InlineData("'=x", "''=x")]           // looks like a guard already, so it is guarded again and imports back unchanged
+    [InlineData("'tis", "'tis")]          // an apostrophe in front of plain text is left alone
     [InlineData("", "")]
     public void Write_GuardsNoteAgainstSpreadsheetFormulas(string note, string expectedField) =>
         Assert.EndsWith($",1.00,{expectedField}\r\n", Export(Tx(1, "2025-01-01", 100, note: note)));

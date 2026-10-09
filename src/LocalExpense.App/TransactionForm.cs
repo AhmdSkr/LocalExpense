@@ -10,9 +10,6 @@ namespace LocalExpense;
 /// </summary>
 public partial class TransactionForm : Form
 {
-    // Keeps Money.ToMinor's checked conversion far from overflowing a long.
-    private const decimal MaxAmount = 999_999_999m;
-
     private int editingId;
 
     public TransactionForm()
@@ -21,7 +18,7 @@ public partial class TransactionForm : Form
 
         // Must run before SetTransaction can assign Value, or a large amount exceeds the default Maximum.
         amountInput.DecimalPlaces = Money.Exponent;
-        amountInput.Maximum = MaxAmount;
+        amountInput.Maximum = Money.ToMajor(TransactionService.MaxAmountMinor);   // the same limit the service and the importer enforce
         categoryCombo.MaxLength = TransactionService.MaxCategoryLength;
         noteText.MaxLength = TransactionService.MaxNoteLength;
         datePicker.Value = DateTime.Today;
