@@ -1,6 +1,6 @@
 namespace LocalExpense
 {
-    partial class AddTransactionForm
+    partial class TransactionForm
     {
         /// <summary>
         /// Required designer variable.
@@ -242,7 +242,7 @@ namespace LocalExpense
             errorProvider.BlinkStyle = ErrorBlinkStyle.NeverBlink;
             errorProvider.ContainerControl = this;
             //
-            // AddTransactionForm
+            // TransactionForm
             // 
             AcceptButton = okButton;
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -253,7 +253,7 @@ namespace LocalExpense
             FormBorderStyle = FormBorderStyle.FixedDialog;
             MaximizeBox = false;
             MinimizeBox = false;
-            Name = "AddTransactionForm";
+            Name = "TransactionForm";
             ShowInTaskbar = false;
             StartPosition = FormStartPosition.CenterParent;
             Text = "Add transaction";

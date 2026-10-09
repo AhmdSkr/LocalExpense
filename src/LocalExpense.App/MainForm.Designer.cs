@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            DataGridView transactionsGrid;
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             idColumn = new DataGridViewTextBoxColumn();
@@ -41,6 +40,8 @@
             transactionsGrid = new DataGridView();
             toolbarPanel = new FlowLayoutPanel();
             addButton = new Button();
+            editButton = new Button();
+            deleteButton = new Button();
             ((System.ComponentModel.ISupportInitialize)transactionsGrid).BeginInit();
             ((System.ComponentModel.ISupportInitialize)transactionBindingSource).BeginInit();
             toolbarPanel.SuspendLayout();
@@ -58,13 +59,18 @@
             transactionsGrid.Location = new Point(0, 0);
             transactionsGrid.Name = "transactionsGrid";
             transactionsGrid.ReadOnly = true;
+            transactionsGrid.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             transactionsGrid.Size = new Size(800, 450);
-            transactionsGrid.TabIndex = 1;
+            transactionsGrid.TabIndex = 3;
+            transactionsGrid.CellDoubleClick += transactionsGrid_CellDoubleClick;
+            transactionsGrid.SelectionChanged += transactionsGrid_SelectionChanged;
             //
             // toolbarPanel
             //
             toolbarPanel.AutoSize = true;
             toolbarPanel.Controls.Add(addButton);
+            toolbarPanel.Controls.Add(editButton);
+            toolbarPanel.Controls.Add(deleteButton);
             toolbarPanel.Dock = DockStyle.Top;
             toolbarPanel.Location = new Point(0, 0);
             toolbarPanel.Name = "toolbarPanel";
@@ -82,6 +88,28 @@
             addButton.Text = "&Add transaction";
             addButton.UseVisualStyleBackColor = true;
             addButton.Click += addButton_Click;
+            //
+            // editButton
+            //
+            editButton.Enabled = false;
+            editButton.Location = new Point(125, 9);
+            editButton.Name = "editButton";
+            editButton.Size = new Size(75, 26);
+            editButton.TabIndex = 1;
+            editButton.Text = "&Edit";
+            editButton.UseVisualStyleBackColor = true;
+            editButton.Click += editButton_Click;
+            //
+            // deleteButton
+            //
+            deleteButton.Enabled = false;
+            deleteButton.Location = new Point(206, 9);
+            deleteButton.Name = "deleteButton";
+            deleteButton.Size = new Size(75, 26);
+            deleteButton.TabIndex = 2;
+            deleteButton.Text = "&Delete";
+            deleteButton.UseVisualStyleBackColor = true;
+            deleteButton.Click += deleteButton_Click;
             //
             // idColumn
             // 
@@ -158,5 +186,7 @@
         private DataGridViewTextBoxColumn noteColumn;
         private FlowLayoutPanel toolbarPanel;
         private Button addButton;
+        private Button editButton;
+        private Button deleteButton;
     }
 }

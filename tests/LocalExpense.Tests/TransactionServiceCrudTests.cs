@@ -136,6 +136,41 @@ public class TransactionServiceCrudTests : IDisposable
     }
 
     [Fact]
+    public async Task DeleteMany_RemovesOnlyTheListedRowsAndReturnsTheCount()
+    {
+        var a = await _service.AddAsync(New());
+        var b = await _service.AddAsync(New());
+        var keep = await _service.AddAsync(New());
+
+        var deleted = await _service.DeleteManyAsync([a.Id, b.Id]);
+
+        Assert.Equal(2, deleted);
+        Assert.Null(await _service.GetByIdAsync(a.Id));
+        Assert.Null(await _service.GetByIdAsync(b.Id));
+        Assert.NotNull(await _service.GetByIdAsync(keep.Id));
+    }
+
+    [Fact]
+    public async Task DeleteMany_IgnoresUnknownIdsAndCountsOnlyRealDeletes()
+    {
+        var existing = await _service.AddAsync(New());
+
+        var deleted = await _service.DeleteManyAsync([existing.Id, existing.Id + 100]);
+
+        Assert.Equal(1, deleted);
+        Assert.Null(await _service.GetByIdAsync(existing.Id));
+    }
+
+    [Fact]
+    public async Task DeleteMany_WithNoIdsDeletesNothing()
+    {
+        var existing = await _service.AddAsync(New());
+
+        Assert.Equal(0, await _service.DeleteManyAsync([]));
+        Assert.NotNull(await _service.GetByIdAsync(existing.Id));
+    }
+
+    [Fact]
     public async Task GetAll_ReturnsAnEmptyListWhenThereAreNoRows() =>
         Assert.Empty(await _service.GetAllAsync());
 

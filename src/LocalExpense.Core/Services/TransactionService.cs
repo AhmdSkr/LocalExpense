@@ -64,6 +64,16 @@ public class TransactionService(IDbContextFactory<AppDbContext> factory)
         return await db.Transactions.Where(t => t.Id == id).ExecuteDeleteAsync(ct) > 0;
     }
 
+    /// <summary>Deletes every transaction whose Id is listed, in one statement. Unknown Ids are ignored.</summary>
+    /// <returns>How many rows were actually deleted.</returns>
+    public async Task<int> DeleteManyAsync(IReadOnlyCollection<int> ids, CancellationToken ct = default)
+    {
+        if (ids.Count == 0)
+            return 0;
+        await using var db = await factory.CreateDbContextAsync(ct);
+        return await db.Transactions.Where(t => ids.Contains(t.Id)).ExecuteDeleteAsync(ct);
+    }
+
     /// <summary>Net total in minor units (income minus expenses). Inclusive on both ends.</summary>
     public async Task<long> GetTotalAsync(DateOnly from, DateOnly to, CancellationToken ct = default)
     {
