@@ -39,8 +39,11 @@
             noteColumn = new DataGridViewTextBoxColumn();
             transactionBindingSource = new BindingSource(components);
             transactionsGrid = new DataGridView();
+            toolbarPanel = new FlowLayoutPanel();
+            addButton = new Button();
             ((System.ComponentModel.ISupportInitialize)transactionsGrid).BeginInit();
             ((System.ComponentModel.ISupportInitialize)transactionBindingSource).BeginInit();
+            toolbarPanel.SuspendLayout();
             SuspendLayout();
             // 
             // transactionsGrid
@@ -56,8 +59,30 @@
             transactionsGrid.Name = "transactionsGrid";
             transactionsGrid.ReadOnly = true;
             transactionsGrid.Size = new Size(800, 450);
-            transactionsGrid.TabIndex = 0;
-            // 
+            transactionsGrid.TabIndex = 1;
+            //
+            // toolbarPanel
+            //
+            toolbarPanel.AutoSize = true;
+            toolbarPanel.Controls.Add(addButton);
+            toolbarPanel.Dock = DockStyle.Top;
+            toolbarPanel.Location = new Point(0, 0);
+            toolbarPanel.Name = "toolbarPanel";
+            toolbarPanel.Padding = new Padding(6, 6, 6, 3);
+            toolbarPanel.Size = new Size(800, 38);
+            toolbarPanel.TabIndex = 0;
+            //
+            // addButton
+            //
+            addButton.AutoSize = true;
+            addButton.Location = new Point(9, 9);
+            addButton.Name = "addButton";
+            addButton.Size = new Size(110, 26);
+            addButton.TabIndex = 0;
+            addButton.Text = "&Add transaction";
+            addButton.UseVisualStyleBackColor = true;
+            addButton.Click += addButton_Click;
+            //
             // idColumn
             // 
             idColumn.DataPropertyName = "Id";
@@ -111,11 +136,15 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(transactionsGrid);
+            Controls.Add(toolbarPanel);
             Name = "MainForm";
             Text = "Local Expenses";
             ((System.ComponentModel.ISupportInitialize)transactionsGrid).EndInit();
             ((System.ComponentModel.ISupportInitialize)transactionBindingSource).EndInit();
+            toolbarPanel.ResumeLayout(false);
+            toolbarPanel.PerformLayout();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -127,5 +156,7 @@
         private DataGridViewTextBoxColumn categoryColumn;
         private DataGridViewTextBoxColumn amountColumn;
         private DataGridViewTextBoxColumn noteColumn;
+        private FlowLayoutPanel toolbarPanel;
+        private Button addButton;
     }
 }

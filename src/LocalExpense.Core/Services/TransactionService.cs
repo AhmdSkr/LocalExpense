@@ -6,8 +6,8 @@ namespace LocalExpense.Services;
 
 public class TransactionService(IDbContextFactory<AppDbContext> factory)
 {
-    private const int MaxCategoryLength = 100;
-    private const int MaxNoteLength = 500;
+    public const int MaxCategoryLength = 100;
+    public const int MaxNoteLength = 500;
 
     public async Task<List<Transaction>> GetAllAsync(CancellationToken ct = default)
     {
