@@ -387,6 +387,16 @@ public class TransactionServiceQueryTests : IDisposable
         Assert.Equal(new[] { "Food", "Fun", "Rent" }, await _service.GetCategoriesAsync());
     }
 
+    // Same order as the Reports table (ReportBuilder.ByCategory), not SQLite's byte order, which would put "Zoo" before "apples".
+    [Fact]
+    public async Task GetCategories_SortsIgnoringCaseAndKeepsCaseVariantsApart()
+    {
+        foreach (var category in new[] { "rent", "Rent", "Zoo", "apples", "Bills" })
+            await Add(Oct1, -1, category);
+
+        Assert.Equal(new[] { "apples", "Bills", "Rent", "rent", "Zoo" }, await _service.GetCategoriesAsync());
+    }
+
     [Fact]
     public async Task GetCategories_ReturnsAnEmptyListWhenThereAreNoRows() =>
         Assert.Empty(await _service.GetCategoriesAsync());

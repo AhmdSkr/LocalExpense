@@ -44,6 +44,7 @@
             editButton = new Button();
             deleteButton = new Button();
             exportButton = new Button();
+            reportsButton = new Button();
             filterPanel = new FlowLayoutPanel();
             fromLabel = new Label();
             fromPicker = new DateTimePicker();
@@ -90,6 +91,7 @@
             toolbarPanel.Controls.Add(editButton);
             toolbarPanel.Controls.Add(deleteButton);
             toolbarPanel.Controls.Add(exportButton);
+            toolbarPanel.Controls.Add(reportsButton);
             toolbarPanel.Dock = DockStyle.Top;
             toolbarPanel.Location = new Point(0, 0);
             toolbarPanel.Name = "toolbarPanel";
@@ -139,6 +141,15 @@
             resources.ApplyResources(exportButton, "exportButton");
             exportButton.UseVisualStyleBackColor = true;
             exportButton.Click += exportButton_Click;
+            //
+            // reportsButton
+            //
+            reportsButton.AutoSize = true;
+            reportsButton.Name = "reportsButton";
+            reportsButton.TabIndex = 4;
+            resources.ApplyResources(reportsButton, "reportsButton");
+            reportsButton.UseVisualStyleBackColor = true;
+            reportsButton.Click += reportsButton_Click;
             //
             // filterPanel
             //
@@ -337,6 +348,7 @@
         private Button editButton;
         private Button deleteButton;
         private Button exportButton;
+        private Button reportsButton;
         private FlowLayoutPanel filterPanel;
         private Label fromLabel;
         private DateTimePicker fromPicker;

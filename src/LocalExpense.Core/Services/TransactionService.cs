@@ -141,10 +141,45 @@ public class TransactionService(IDbContextFactory<AppDbContext> factory)
             .ToDictionaryAsync(x => x.Category, x => x.Total, ct);
     }
 
+    /// <summary>
+    /// Income (sum of positive amounts) and expenses (magnitude of the negative ones) per category and day, in minor units,
+    /// inclusive on both ends. One round-trip whatever the period; the date predicate is on the bare indexed column. The Reports form
+    /// groups these into days, months or years in memory, so every report is built from the same rows.
+    /// </summary>
+    public async Task<List<CategoryDayTotals>> GetDailyTotalsByCategoryAsync(DateOnly from, DateOnly to, CancellationToken ct = default)
+    {
+        await using var db = await factory.CreateDbContextAsync(ct);
+        var rows = await db.Transactions
+            .Where(t => t.Date >= from && t.Date <= to)
+            .GroupBy(t => new { t.Category, t.Date })
+            .Select(g => new
+            {
+                g.Key.Category,
+                g.Key.Date,
+                Income = g.Sum(t => t.AmountMinor > 0 ? t.AmountMinor : 0),
+                Expenses = g.Sum(t => t.AmountMinor < 0 ? -t.AmountMinor : 0),
+            })
+            .ToListAsync(ct);
+        return rows.Select(r => new CategoryDayTotals(r.Category, r.Date, new PeriodTotals(r.Income, r.Expenses))).ToList();
+    }
+
+    /// <summary>The dates of the earliest and the latest transaction, or null when there are none.</summary>
+    public async Task<DateRange?> GetDateBoundsAsync(CancellationToken ct = default)
+    {
+        await using var db = await factory.CreateDbContextAsync(ct);
+        return await db.Transactions
+            .GroupBy(_ => 1)
+            .Select(g => new DateRange(g.Min(t => t.Date), g.Max(t => t.Date)))
+            .Cast<DateRange?>()
+            .SingleOrDefaultAsync(ct);
+    }
+
+    /// <summary>Every distinct category, in <see cref="CategoryOrder"/> (sorted here rather than by SQLite, whose order is by byte value).</summary>
     public async Task<List<string>> GetCategoriesAsync(CancellationToken ct = default)
     {
         await using var db = await factory.CreateDbContextAsync(ct);
-        return await db.Transactions.Select(t => t.Category).Distinct().OrderBy(c => c).ToListAsync(ct);
+        var categories = await db.Transactions.Select(t => t.Category).Distinct().ToListAsync(ct);
+        return categories.OrderByCategory(c => c).ToList();
     }
 
     /// <summary>

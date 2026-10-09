@@ -1,15 +1,17 @@
 using System.Text;
 using LocalExpense.Models;
 using LocalExpense.Services;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace LocalExpense;
 
 public partial class MainForm : Form
 {
     private readonly TransactionService? service;
+    private readonly IServiceScopeFactory? scopeFactory;
     private bool busy;
     private bool updatingFilter;
-    private CancellationTokenSource? loadCts;
+    private readonly LatestQuery loads = new();
 
     // Designer path: no service, so nothing is loaded. Production composes the overload below via DI.
     public MainForm()
@@ -18,9 +20,10 @@ public partial class MainForm : Form
         transactionsGrid.CellFormatting += AmountCellFormatting;
     }
 
-    public MainForm(TransactionService service) : this()
+    public MainForm(TransactionService service, IServiceScopeFactory scopeFactory) : this()
     {
         this.service = service;
+        this.scopeFactory = scopeFactory;
     }
 
     protected override async void OnLoad(EventArgs e)
@@ -43,6 +46,9 @@ public partial class MainForm : Form
 
     private void exportButton_Click(object? sender, EventArgs e) =>
         exportMenu.Show(exportButton, new Point(0, exportButton.Height));
+
+    private async void reportsButton_Click(object? sender, EventArgs e) =>
+        await RunGuardedAsync(ShowReports);
 
     private async void exportFilteredMenuItem_Click(object? sender, EventArgs e) =>
         await RunGuardedAsync(() => ExportAsync(filtered: true));
@@ -89,24 +95,12 @@ public partial class MainForm : Form
         toolbarPanel.Enabled = false;
         try
         {
-            await TryAsync(operation);
+            await this.TryAsync(operation);
         }
         finally
         {
             busy = false;
             toolbarPanel.Enabled = true;
-        }
-    }
-
-    private async Task TryAsync(Func<Task> operation)
-    {
-        try
-        {
-            await operation();
-        }
-        catch (Exception ex)
-        {
-            MessageBox.Show(this, ex.Message, Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
     }
 
@@ -136,7 +130,7 @@ public partial class MainForm : Form
     {
         if (!updatingFilter && service is not null)
         {
-            await TryAsync(RefreshAsync);
+            await this.TryAsync(RefreshAsync);
         }
     }
 
@@ -149,7 +143,7 @@ public partial class MainForm : Form
 
     protected override void OnFormClosed(FormClosedEventArgs e)
     {
-        CancelPendingLoad();
+        loads.Cancel();
         base.OnFormClosed(e);
     }
 
@@ -187,39 +181,20 @@ public partial class MainForm : Form
         var from = FromDate;
         var to = ToDate;
         var category = SelectedCategory;
-        CancelPendingLoad();
 
         if (from > to)
         {
+            loads.Cancel();
             errorProvider.SetError(toPicker, Strings.EndBeforeStart);
             transactionBindingSource.DataSource = new List<Transaction>();
             return;
         }
 
         errorProvider.SetError(toPicker, "");
-        var cts = loadCts = new CancellationTokenSource();
-        List<Transaction> rows;
-        try
-        {
-            rows = await service!.GetFilteredAsync(from, to, category, cts.Token);
-        }
-        catch (OperationCanceledException) when (cts.IsCancellationRequested)
-        {
-            return;
-        }
-
-        // The query can finish in the same instant it is cancelled, so check again before showing it.
-        if (!cts.IsCancellationRequested)
+        if (await loads.RunAsync(ct => service!.GetFilteredAsync(from, to, category, ct)) is { } rows)
         {
             transactionBindingSource.DataSource = rows;
         }
-    }
-
-    private void CancelPendingLoad()
-    {
-        loadCts?.Cancel();
-        loadCts?.Dispose();
-        loadCts = null;
     }
 
     private async Task AddTransactionAsync()
@@ -276,6 +251,19 @@ public partial class MainForm : Form
 
         await service!.DeleteManyAsync(selected.Select(t => t.Id).ToArray());
         await ReloadAsync();
+    }
+
+    // Each open gets its own scope: the container keeps every IDisposable it resolves until its scope ends, so a form resolved from the root
+    // would stay alive until the app exits. Disposing the scope disposes the form.
+    private Task ShowReports()
+    {
+        if (scopeFactory is not null)
+        {
+            using var scope = scopeFactory.CreateScope();
+            scope.ServiceProvider.GetRequiredService<ReportsForm>().ShowDialog(this);
+        }
+
+        return Task.CompletedTask;
     }
 
     /// <summary>
@@ -362,7 +350,7 @@ public partial class MainForm : Form
         }
 
         e.Value = Money.Format(minor);
-        e.CellStyle!.ForeColor = minor < 0 ? Color.Firebrick : Color.SeaGreen;
+        e.CellStyle!.ForeColor = FormHelpers.AmountColor(minor);
         e.FormattingApplied = true;
     }
 }

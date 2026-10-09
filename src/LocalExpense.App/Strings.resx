@@ -52,7 +52,59 @@
     <value>Export transactions</value>
     <comment>Title of the save-file dialog.</comment>
   </data>
+  <data name="LastMonth" xml:space="preserve">
+    <value>Last month</value>
+    <comment>First entry of the Reports month selector: the month ending today.</comment>
+  </data>
+  <data name="LastYear" xml:space="preserve">
+    <value>Last year</value>
+    <comment>First entry of the Reports year selector: the 12 months ending today.</comment>
+  </data>
+  <data name="LegendExpenses" xml:space="preserve">
+    <value>Expenses</value>
+    <comment>Chart legend entry for the expenses series.</comment>
+  </data>
+  <data name="LegendIncome" xml:space="preserve">
+    <value>Income</value>
+    <comment>Chart legend entry for the income series.</comment>
+  </data>
+  <data name="LegendNet" xml:space="preserve">
+    <value>Net</value>
+    <comment>Chart legend entry for the net (income minus expenses) series.</comment>
+  </data>
+  <data name="PeriodMonth" xml:space="preserve">
+    <value>Month</value>
+    <comment>Reports period kind: one calendar month, or the last month.</comment>
+  </data>
+  <data name="PeriodRange" xml:space="preserve">
+    <value>{0} to {1}</value>
+    <comment>Reports: the dates a period covers. {0} is the first date, {1} the last (both yyyy-MM-dd).</comment>
+  </data>
+  <data name="PeriodTimeline" xml:space="preserve">
+    <value>Whole timeline</value>
+    <comment>Reports period kind: from the first to the last transaction.</comment>
+  </data>
+  <data name="PeriodYear" xml:space="preserve">
+    <value>Year</value>
+    <comment>Reports period kind: one calendar year, or the last year.</comment>
+  </data>
+  <data name="TotalRow" xml:space="preserve">
+    <value>Total</value>
+    <comment>Label of the last row of the Reports table, which sums each period column.</comment>
+  </data>
   <data name="TransactionGone" xml:space="preserve">
     <value>That transaction no longer exists.</value>
+  </data>
+  <data name="ViewBarChart" xml:space="preserve">
+    <value>Bar chart</value>
+    <comment>Entry of the Reports view selector: income and expenses as bars.</comment>
+  </data>
+  <data name="ViewLineChart" xml:space="preserve">
+    <value>Line chart</value>
+    <comment>Entry of the Reports view selector: income, expenses and net as lines.</comment>
+  </data>
+  <data name="ViewTable" xml:space="preserve">
+    <value>Table</value>
+    <comment>Entry of the Reports view selector: net per category and period as a table.</comment>
   </data>
 </root>

@@ -20,6 +20,7 @@ namespace LocalExpense
             builder.Services.AddDbContextFactory<AppDbContext>(o => o.UseSqlite($"Data Source={AppDbContext.DbPath}"));
             builder.Services.AddSingleton<Services.TransactionService>();
             builder.Services.AddTransient<MainForm>();
+            builder.Services.AddTransient<ReportsForm>();
 
             using var host = builder.Build();
 

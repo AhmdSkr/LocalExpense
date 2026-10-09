@@ -63,14 +63,12 @@ namespace LocalExpense {
         /// <summary>
         ///   Looks up a localized string similar to All categories.
         /// </summary>
-        internal static string AllCategories
-        {
-            get
-            {
+        internal static string AllCategories {
+            get {
                 return ResourceManager.GetString("AllCategories", resourceCulture);
             }
         }
-
+        
         /// <summary>
         ///   Looks up a localized string similar to Enter an amount greater than zero..
         /// </summary>
@@ -97,7 +95,7 @@ namespace LocalExpense {
                 return ResourceManager.GetString("CsvFileFilter", resourceCulture);
             }
         }
-
+        
         /// <summary>
         ///   Looks up a localized string similar to Delete the {0} selected transactions?.
         /// </summary>
@@ -128,14 +126,12 @@ namespace LocalExpense {
         /// <summary>
         ///   Looks up a localized string similar to The end date is before the start date..
         /// </summary>
-        internal static string EndBeforeStart
-        {
-            get
-            {
+        internal static string EndBeforeStart {
+            get {
                 return ResourceManager.GetString("EndBeforeStart", resourceCulture);
             }
         }
-
+        
         /// <summary>
         ///   Looks up a localized string similar to Exported {0} transactions to {1}..
         /// </summary>
@@ -144,7 +140,7 @@ namespace LocalExpense {
                 return ResourceManager.GetString("ExportDone", resourceCulture);
             }
         }
-
+        
         /// <summary>
         ///   Looks up a localized string similar to The export failed and no file was written to {0}: {1}.
         /// </summary>
@@ -153,7 +149,7 @@ namespace LocalExpense {
                 return ResourceManager.GetString("ExportFailed", resourceCulture);
             }
         }
-
+        
         /// <summary>
         ///   Looks up a localized string similar to Export transactions.
         /// </summary>
@@ -162,13 +158,130 @@ namespace LocalExpense {
                 return ResourceManager.GetString("ExportTitle", resourceCulture);
             }
         }
-
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Last month.
+        /// </summary>
+        internal static string LastMonth {
+            get {
+                return ResourceManager.GetString("LastMonth", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Last year.
+        /// </summary>
+        internal static string LastYear {
+            get {
+                return ResourceManager.GetString("LastYear", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Expenses.
+        /// </summary>
+        internal static string LegendExpenses {
+            get {
+                return ResourceManager.GetString("LegendExpenses", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Income.
+        /// </summary>
+        internal static string LegendIncome {
+            get {
+                return ResourceManager.GetString("LegendIncome", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Net.
+        /// </summary>
+        internal static string LegendNet {
+            get {
+                return ResourceManager.GetString("LegendNet", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Month.
+        /// </summary>
+        internal static string PeriodMonth {
+            get {
+                return ResourceManager.GetString("PeriodMonth", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {0} to {1}.
+        /// </summary>
+        internal static string PeriodRange {
+            get {
+                return ResourceManager.GetString("PeriodRange", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Whole timeline.
+        /// </summary>
+        internal static string PeriodTimeline {
+            get {
+                return ResourceManager.GetString("PeriodTimeline", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Year.
+        /// </summary>
+        internal static string PeriodYear {
+            get {
+                return ResourceManager.GetString("PeriodYear", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Total.
+        /// </summary>
+        internal static string TotalRow {
+            get {
+                return ResourceManager.GetString("TotalRow", resourceCulture);
+            }
+        }
+        
         /// <summary>
         ///   Looks up a localized string similar to That transaction no longer exists..
         /// </summary>
         internal static string TransactionGone {
             get {
                 return ResourceManager.GetString("TransactionGone", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bar chart.
+        /// </summary>
+        internal static string ViewBarChart {
+            get {
+                return ResourceManager.GetString("ViewBarChart", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Line chart.
+        /// </summary>
+        internal static string ViewLineChart {
+            get {
+                return ResourceManager.GetString("ViewLineChart", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Table.
+        /// </summary>
+        internal static string ViewTable {
+            get {
+                return ResourceManager.GetString("ViewTable", resourceCulture);
             }
         }
     }
