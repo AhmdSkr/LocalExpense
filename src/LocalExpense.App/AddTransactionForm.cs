@@ -15,6 +15,13 @@ public partial class AddTransactionForm : Form
     public AddTransactionForm()
     {
         InitializeComponent();
+    }
+
+    // Runtime-only setup lives here, not in the constructor, so the Designer never sees it
+    // and cannot serialize it into InitializeComponent.
+    protected override void OnLoad(EventArgs e)
+    {
+        base.OnLoad(e);
 
         amountInput.DecimalPlaces = Money.Exponent;
         amountInput.Maximum = MaxAmount;
@@ -41,19 +48,27 @@ public partial class AddTransactionForm : Form
             return;
         }
 
-        if (amountInput.Value <= 0)
+        var amountInvalid = amountInput.Value <= 0;
+        var categoryInvalid = string.IsNullOrWhiteSpace(categoryCombo.Text);
+        errorProvider.SetError(amountInput, amountInvalid ? "Enter an amount greater than zero." : "");
+        errorProvider.SetError(categoryCombo, categoryInvalid ? "Category is required." : "");
+
+        if (amountInvalid || categoryInvalid)
         {
-            Reject("Enter an amount greater than zero.", amountInput, e);
+            e.Cancel = true;
+            DialogResult = DialogResult.None;
+            (amountInvalid ? (Control)amountInput : categoryCombo).Focus();
+            return;
         }
-        else if (string.IsNullOrWhiteSpace(categoryCombo.Text))
-        {
-            Reject("Category is required.", categoryCombo, e);
-        }
-        else
-        {
-            Result = BuildTransaction();
-        }
+
+        Result = BuildTransaction();
     }
+
+    private void amountInput_ValueChanged(object? sender, EventArgs e) =>
+        errorProvider.SetError(amountInput, "");
+
+    private void categoryCombo_TextChanged(object? sender, EventArgs e) =>
+        errorProvider.SetError(categoryCombo, "");
 
     private Transaction BuildTransaction() => Transaction.Create(
         DateOnly.FromDateTime(datePicker.Value),
@@ -61,12 +76,4 @@ public partial class AddTransactionForm : Form
         expenseRadio.Checked,
         categoryCombo.Text,
         noteText.Text);
-
-    private void Reject(string message, Control field, FormClosingEventArgs e)
-    {
-        e.Cancel = true;
-        DialogResult = DialogResult.None;
-        MessageBox.Show(this, message, Text, MessageBoxButtons.OK, MessageBoxIcon.Warning);
-        field.Focus();
-    }
 }

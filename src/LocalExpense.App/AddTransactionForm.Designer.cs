@@ -28,6 +28,7 @@ namespace LocalExpense
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             layoutPanel = new TableLayoutPanel();
             dateLabel = new Label();
             datePicker = new DateTimePicker();
@@ -44,10 +45,12 @@ namespace LocalExpense
             buttonPanel = new FlowLayoutPanel();
             okButton = new Button();
             cancelButton = new Button();
+            errorProvider = new ErrorProvider(components);
             layoutPanel.SuspendLayout();
             typePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)amountInput).BeginInit();
             buttonPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)errorProvider).BeginInit();
             SuspendLayout();
             // 
             // layoutPanel
@@ -69,7 +72,7 @@ namespace LocalExpense
             layoutPanel.Dock = DockStyle.Fill;
             layoutPanel.Location = new Point(0, 0);
             layoutPanel.Name = "layoutPanel";
-            layoutPanel.Padding = new Padding(12);
+            layoutPanel.Padding = new Padding(12, 12, 20, 12);
             layoutPanel.RowCount = 6;
             layoutPanel.RowStyles.Add(new RowStyle());
             layoutPanel.RowStyles.Add(new RowStyle());
@@ -160,7 +163,8 @@ namespace LocalExpense
             amountInput.Size = new Size(290, 23);
             amountInput.TabIndex = 5;
             amountInput.TextAlign = HorizontalAlignment.Right;
-            // 
+            amountInput.ValueChanged += amountInput_ValueChanged;
+            //
             // categoryLabel
             // 
             categoryLabel.Anchor = AnchorStyles.Left;
@@ -178,7 +182,8 @@ namespace LocalExpense
             categoryCombo.Name = "categoryCombo";
             categoryCombo.Size = new Size(290, 23);
             categoryCombo.TabIndex = 7;
-            // 
+            categoryCombo.TextChanged += categoryCombo_TextChanged;
+            //
             // noteLabel
             // 
             noteLabel.AutoSize = true;
@@ -231,7 +236,12 @@ namespace LocalExpense
             cancelButton.TabIndex = 1;
             cancelButton.Text = "Cancel";
             cancelButton.UseVisualStyleBackColor = true;
-            // 
+            //
+            // errorProvider
+            //
+            errorProvider.BlinkStyle = ErrorBlinkStyle.NeverBlink;
+            errorProvider.ContainerControl = this;
+            //
             // AddTransactionForm
             // 
             AcceptButton = okButton;
@@ -253,6 +263,8 @@ namespace LocalExpense
             typePanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)amountInput).EndInit();
             buttonPanel.ResumeLayout(false);
+            buttonPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)errorProvider).EndInit();
             ResumeLayout(false);
         }
 
@@ -274,5 +286,6 @@ namespace LocalExpense
         private FlowLayoutPanel buttonPanel;
         private Button okButton;
         private Button cancelButton;
+        private ErrorProvider errorProvider;
     }
 }
