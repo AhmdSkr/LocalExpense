@@ -9,4 +9,9 @@
     <RepositoryUrl>https://github.com/AhmdSkr/LocalExpense</RepositoryUrl>
   </PropertyGroup>
 
+  <!-- Debug symbols inside each dll, so a single-file release still reports line numbers and no loose .pdb has to ship. -->
+  <PropertyGroup>
+    <DebugType>embedded</DebugType>
+  </PropertyGroup>
+
 </Project>

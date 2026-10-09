@@ -1,0 +1,75 @@
+name: Release
+
+# Pushing a tag like v0.1.0 builds, tests and packages the app and opens a *draft* GitHub release with the zip, its
+# checksum and a build provenance attestation. Smoke-test the draft's zip, then publish the release by hand.
+on:
+  push:
+    tags: ['v*']
+
+permissions:
+  contents: read
+
+env:
+  DOTNET_NOLOGO: true
+  DOTNET_CLI_TELEMETRY_OPTOUT: true
+
+jobs:
+  release:
+    runs-on: windows-latest
+    permissions:
+      contents: write       # create the draft release
+      id-token: write       # sign the provenance attestation
+      attestations: write   # store it
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - uses: actions/setup-dotnet@a98b56852c35b8e3190ac28c8c2271da59106c68 # v6.0.0
+        with:
+          dotnet-version: 10.0.x
+
+      - name: Check the tag matches the version in Directory.Build.props
+        id: version
+        shell: pwsh
+        run: |
+          $version = (dotnet msbuild src/LocalExpense.App/LocalExpense.App.csproj -getProperty:Version | Select-Object -Last 1).Trim()
+          if ("v$version" -ne $env:GITHUB_REF_NAME) {
+            throw "Tag $env:GITHUB_REF_NAME does not match Version $version in Directory.Build.props. Bump the version there, or fix the tag."
+          }
+          "version=$version" >> $env:GITHUB_OUTPUT
+          "zip=LocalExpense-$version-win-x64.zip" >> $env:GITHUB_OUTPUT
+
+      - name: Test
+        run: dotnet test LocalExpense.sln -c Release
+
+      - name: Publish
+        run: dotnet publish src/LocalExpense.App -c Release -p:PublishProfile=win-x64
+
+      # Code signing goes here, on src/LocalExpense.App/bin/publish/win-x64/LocalExpense.exe, before it is zipped
+      # (for example azure/trusted-signing-action). Until then the exe is unsigned and Windows SmartScreen warns on first run.
+
+      - name: Package
+        shell: pwsh
+        env:
+          ZIP: ${{ steps.version.outputs.zip }}
+        run: |
+          New-Item -ItemType Directory dist | Out-Null
+          Compress-Archive -Path src/LocalExpense.App/bin/publish/win-x64/LocalExpense.exe, LICENSE.txt -DestinationPath "dist/$env:ZIP"
+          $hash = (Get-FileHash "dist/$env:ZIP" -Algorithm SHA256).Hash.ToLowerInvariant()
+          "$hash  $env:ZIP" | Out-File dist/SHA256SUMS.txt -Encoding ascii
+          Get-Content dist/SHA256SUMS.txt
+
+      - name: Attest build provenance
+        uses: actions/attest-build-provenance@4d101475d8b20a2381f78447822ac1eab6504dd8 # v4.2.2
+        with:
+          subject-path: dist/${{ steps.version.outputs.zip }}
+
+      - name: Create the draft release
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+          VERSION: ${{ steps.version.outputs.version }}
+          ZIP: ${{ steps.version.outputs.zip }}
+        run: >
+          gh release create $env:GITHUB_REF_NAME "dist/$env:ZIP" dist/SHA256SUMS.txt
+          --draft --title "LocalExpense $env:VERSION"
+          --notes-file .github/release-notes.md --generate-notes
