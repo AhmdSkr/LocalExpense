@@ -1,5 +1,7 @@
 # LocalExpense
 
+[![CI](https://github.com/AhmdSkr/LocalExpense/actions/workflows/ci.yml/badge.svg)](https://github.com/AhmdSkr/LocalExpense/actions/workflows/ci.yml)
+
 A local-first personal expense tracker for Windows. Your data stays in a single SQLite file on your machine: no server, no account, no network.
 
 Built with .NET 10, Windows Forms, Entity Framework Core (SQLite) and [ScottPlot](https://scottplot.net/).
@@ -7,6 +9,17 @@ Built with .NET 10, Windows Forms, Entity Framework Core (SQLite) and [ScottPlot
 ![The main window, listing transactions newest first](docs/screenshots/main.png)
 
 *Screenshots show the bundled sample data: three years of a fictional family's household money (see [Sample data](#sample-data)).*
+
+## Download
+
+Get `LocalExpense-<version>-win-x64.zip` from the [latest release](https://github.com/AhmdSkr/LocalExpense/releases/latest). It runs on Windows 10 and 11 (64-bit) and needs nothing else installed, not even .NET.
+
+1. Unzip it anywhere and run `LocalExpense.exe`. There is no installer; to remove the app, delete the folder (and your data, if you want, see below).
+2. Click **Sample data** to look around on three years of a fictional family's money before entering your own.
+
+The exe is not code-signed yet, so on first run Windows SmartScreen may say "Windows protected your PC": click **More info**, then **Run anyway**. Each release lists the zip's SHA-256 hash and carries a [build provenance attestation](https://docs.github.com/actions/security-for-github-actions/using-artifact-attestations) proving it was built from this repository by its release workflow; check it with `gh attestation verify <zip> --repo AhmdSkr/LocalExpense`.
+
+Your data lives in `%LocalAppData%\LocalExpense\localexpense.db`. Back up that one file to back up everything.
 
 ## Features
 
@@ -42,16 +55,23 @@ How finely a period is sliced:
 | A year, or the last 12 months | by month | by month |
 | The whole timeline | by month, or by year when it spans more than 24 months | by month |
 
-## Getting started
+## Building from source
 
 Requires Windows and the [.NET 10 SDK](https://dotnet.microsoft.com/download).
 
 ```powershell
 dotnet test LocalExpense.sln
 dotnet run --project src/LocalExpense.App
+dotnet run --project src/LocalExpense.App -- --demo   # straight into the Sample data window
 ```
 
-On first launch, the database is created and migrated at `%LocalAppData%\LocalExpense\localexpense.db`. Back up that one file to back up everything.
+On first launch, the database is created and migrated at `%LocalAppData%\LocalExpense\localexpense.db`.
+
+To build the same single-file exe as a release (into `src/LocalExpense.App/bin/publish/win-x64/`):
+
+```powershell
+dotnet publish src/LocalExpense.App -c Release -p:PublishProfile=win-x64
+```
 
 ## Sample data
 
@@ -110,6 +130,8 @@ tools/LocalExpense.Cli   Command-line import and sample data generator
 tests/LocalExpense.Tests xUnit tests against real SQLite, including concurrency
 samples                  The sample family's CSV (built into the app for the Sample data window) and their story
 docs/screenshots         The images in this README
+.github/workflows        CI (build and test every push and pull request) and the release workflow
+Directory.Build.props    Version and product metadata shared by every project
 ```
 
 ## Design notes
@@ -127,6 +149,21 @@ docs/screenshots         The images in this README
 ```powershell
 dotnet ef migrations add <Name> -o Data/Migrations --project src/LocalExpense.Core --startup-project src/LocalExpense.App
 ```
+
+## Releasing
+
+The version lives in one place, `Directory.Build.props`. To release:
+
+1. Set `<Version>` there (for example `0.2.0`), commit, and push `master`.
+2. Tag that commit and push the tag:
+
+   ```powershell
+   git tag v0.2.0
+   git push origin v0.2.0
+   ```
+
+3. The [release workflow](.github/workflows/release.yml) refuses a tag that doesn't match the version. Otherwise it runs the tests, publishes the single-file exe, and zips it with the license. It then writes `SHA256SUMS.txt`, attests the zip's build provenance, and opens a **draft** release with [`.github/release-notes.md`](.github/release-notes.md) followed by the generated notes.
+4. Download the draft's zip, unzip it into an empty folder, run it and click **Sample data**. If it works, edit the notes and publish the release.
 
 ## License
 
