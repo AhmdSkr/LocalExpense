@@ -28,6 +28,7 @@ namespace LocalExpense
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TransactionForm));
             components = new System.ComponentModel.Container();
             layoutPanel = new TableLayoutPanel();
             dateLabel = new Label();
@@ -91,7 +92,7 @@ namespace LocalExpense
             dateLabel.Name = "dateLabel";
             dateLabel.Size = new Size(34, 15);
             dateLabel.TabIndex = 0;
-            dateLabel.Text = "&Date:";
+            resources.ApplyResources(dateLabel, "dateLabel");
             // 
             // datePicker
             // 
@@ -110,7 +111,7 @@ namespace LocalExpense
             typeLabel.Name = "typeLabel";
             typeLabel.Size = new Size(35, 15);
             typeLabel.TabIndex = 2;
-            typeLabel.Text = "Type:";
+            resources.ApplyResources(typeLabel, "typeLabel");
             // 
             // typePanel
             // 
@@ -132,7 +133,7 @@ namespace LocalExpense
             expenseRadio.Size = new Size(67, 19);
             expenseRadio.TabIndex = 0;
             expenseRadio.TabStop = true;
-            expenseRadio.Text = "&Expense";
+            resources.ApplyResources(expenseRadio, "expenseRadio");
             expenseRadio.UseVisualStyleBackColor = true;
             // 
             // incomeRadio
@@ -142,7 +143,7 @@ namespace LocalExpense
             incomeRadio.Name = "incomeRadio";
             incomeRadio.Size = new Size(65, 19);
             incomeRadio.TabIndex = 1;
-            incomeRadio.Text = "&Income";
+            resources.ApplyResources(incomeRadio, "incomeRadio");
             incomeRadio.UseVisualStyleBackColor = true;
             // 
             // amountLabel
@@ -153,7 +154,7 @@ namespace LocalExpense
             amountLabel.Name = "amountLabel";
             amountLabel.Size = new Size(54, 15);
             amountLabel.TabIndex = 4;
-            amountLabel.Text = "&Amount:";
+            resources.ApplyResources(amountLabel, "amountLabel");
             // 
             // amountInput
             // 
@@ -173,7 +174,7 @@ namespace LocalExpense
             categoryLabel.Name = "categoryLabel";
             categoryLabel.Size = new Size(58, 15);
             categoryLabel.TabIndex = 6;
-            categoryLabel.Text = "&Category:";
+            resources.ApplyResources(categoryLabel, "categoryLabel");
             // 
             // categoryCombo
             // 
@@ -191,7 +192,7 @@ namespace LocalExpense
             noteLabel.Name = "noteLabel";
             noteLabel.Size = new Size(36, 15);
             noteLabel.TabIndex = 8;
-            noteLabel.Text = "&Note:";
+            resources.ApplyResources(noteLabel, "noteLabel");
             // 
             // noteText
             // 
@@ -224,7 +225,7 @@ namespace LocalExpense
             okButton.Name = "okButton";
             okButton.Size = new Size(75, 23);
             okButton.TabIndex = 0;
-            okButton.Text = "OK";
+            resources.ApplyResources(okButton, "okButton");
             okButton.UseVisualStyleBackColor = true;
             // 
             // cancelButton
@@ -234,7 +235,7 @@ namespace LocalExpense
             cancelButton.Name = "cancelButton";
             cancelButton.Size = new Size(75, 23);
             cancelButton.TabIndex = 1;
-            cancelButton.Text = "Cancel";
+            resources.ApplyResources(cancelButton, "cancelButton");
             cancelButton.UseVisualStyleBackColor = true;
             //
             // errorProvider
@@ -256,7 +257,7 @@ namespace LocalExpense
             Name = "TransactionForm";
             ShowInTaskbar = false;
             StartPosition = FormStartPosition.CenterParent;
-            Text = "Add transaction";
+            resources.ApplyResources(this, "$this");
             layoutPanel.ResumeLayout(false);
             layoutPanel.PerformLayout();
             typePanel.ResumeLayout(false);

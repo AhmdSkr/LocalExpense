@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             components = new System.ComponentModel.Container();
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
@@ -85,7 +86,7 @@
             addButton.Name = "addButton";
             addButton.Size = new Size(110, 26);
             addButton.TabIndex = 0;
-            addButton.Text = "&Add transaction";
+            resources.ApplyResources(addButton, "addButton");
             addButton.UseVisualStyleBackColor = true;
             addButton.Click += addButton_Click;
             //
@@ -96,7 +97,7 @@
             editButton.Name = "editButton";
             editButton.Size = new Size(75, 26);
             editButton.TabIndex = 1;
-            editButton.Text = "&Edit";
+            resources.ApplyResources(editButton, "editButton");
             editButton.UseVisualStyleBackColor = true;
             editButton.Click += editButton_Click;
             //
@@ -107,14 +108,14 @@
             deleteButton.Name = "deleteButton";
             deleteButton.Size = new Size(75, 26);
             deleteButton.TabIndex = 2;
-            deleteButton.Text = "&Delete";
+            resources.ApplyResources(deleteButton, "deleteButton");
             deleteButton.UseVisualStyleBackColor = true;
             deleteButton.Click += deleteButton_Click;
             //
             // idColumn
             // 
             idColumn.DataPropertyName = "Id";
-            idColumn.HeaderText = "Id";
+            resources.ApplyResources(idColumn, "idColumn");
             idColumn.Name = "idColumn";
             idColumn.ReadOnly = true;
             idColumn.Visible = false;
@@ -124,14 +125,14 @@
             dateColumn.DataPropertyName = "Date";
             dataGridViewCellStyle1.Format = "yyyy-MM-dd";
             dateColumn.DefaultCellStyle = dataGridViewCellStyle1;
-            dateColumn.HeaderText = "Date";
+            resources.ApplyResources(dateColumn, "dateColumn");
             dateColumn.Name = "dateColumn";
             dateColumn.ReadOnly = true;
             // 
             // categoryColumn
             // 
             categoryColumn.DataPropertyName = "Category";
-            categoryColumn.HeaderText = "Category";
+            resources.ApplyResources(categoryColumn, "categoryColumn");
             categoryColumn.Name = "categoryColumn";
             categoryColumn.ReadOnly = true;
             categoryColumn.Width = 150;
@@ -141,7 +142,7 @@
             amountColumn.DataPropertyName = "AmountMinor";
             dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleRight;
             amountColumn.DefaultCellStyle = dataGridViewCellStyle2;
-            amountColumn.HeaderText = "Amount";
+            resources.ApplyResources(amountColumn, "amountColumn");
             amountColumn.Name = "amountColumn";
             amountColumn.ReadOnly = true;
             amountColumn.Width = 120;
@@ -150,7 +151,7 @@
             // 
             noteColumn.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             noteColumn.DataPropertyName = "Note";
-            noteColumn.HeaderText = "Note";
+            resources.ApplyResources(noteColumn, "noteColumn");
             noteColumn.Name = "noteColumn";
             noteColumn.ReadOnly = true;
             // 
@@ -166,7 +167,7 @@
             Controls.Add(transactionsGrid);
             Controls.Add(toolbarPanel);
             Name = "MainForm";
-            Text = "Local Expenses";
+            resources.ApplyResources(this, "$this");
             ((System.ComponentModel.ISupportInitialize)transactionsGrid).EndInit();
             ((System.ComponentModel.ISupportInitialize)transactionBindingSource).EndInit();
             toolbarPanel.ResumeLayout(false);

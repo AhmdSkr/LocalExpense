@@ -120,4 +120,34 @@
   <metadata name="transactionBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="addButton.Text" xml:space="preserve">
+    <value>&amp;Add transaction</value>
+  </data>
+  <data name="editButton.Text" xml:space="preserve">
+    <value>&amp;Edit</value>
+  </data>
+  <data name="deleteButton.Text" xml:space="preserve">
+    <value>&amp;Delete</value>
+  </data>
+  <data name="idColumn.HeaderText" xml:space="preserve">
+    <value>Id</value>
+  </data>
+  <data name="dateColumn.HeaderText" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="categoryColumn.HeaderText" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="amountColumn.HeaderText" xml:space="preserve">
+    <value>Amount</value>
+  </data>
+  <data name="noteColumn.HeaderText" xml:space="preserve">
+    <value>Note</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Local Expenses</value>
+  </data>
 </root>

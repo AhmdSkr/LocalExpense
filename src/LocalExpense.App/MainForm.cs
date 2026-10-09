@@ -113,7 +113,7 @@ public partial class MainForm : Form
 
         if (!await service.UpdateAsync(edited))
         {
-            MessageBox.Show(this, "That transaction no longer exists.", Text, MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show(this, Strings.TransactionGone, Text, MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         await RefreshAsync();
@@ -128,8 +128,8 @@ public partial class MainForm : Form
         }
 
         var prompt = selected.Count == 1
-            ? "Delete the selected transaction?"
-            : $"Delete the {selected.Count} selected transactions?";
+            ? Strings.DeleteOnePrompt
+            : string.Format(Strings.DeleteManyPrompt, selected.Count);
         if (MessageBox.Show(this, prompt, Text, MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) != DialogResult.Yes)
         {
             return;

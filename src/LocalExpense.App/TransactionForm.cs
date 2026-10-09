@@ -40,7 +40,7 @@ public partial class TransactionForm : Form
     public void SetTransaction(Transaction transaction)
     {
         editingId = transaction.Id;
-        Text = "Edit transaction";
+        Text = Strings.EditTransactionTitle;
         datePicker.Value = transaction.Date.ToDateTime(TimeOnly.MinValue);
         expenseRadio.Checked = transaction.AmountMinor < 0;
         incomeRadio.Checked = transaction.AmountMinor >= 0;
@@ -60,8 +60,8 @@ public partial class TransactionForm : Form
 
         var amountInvalid = amountInput.Value <= 0;
         var categoryInvalid = string.IsNullOrWhiteSpace(categoryCombo.Text);
-        errorProvider.SetError(amountInput, amountInvalid ? "Enter an amount greater than zero." : "");
-        errorProvider.SetError(categoryCombo, categoryInvalid ? "Category is required." : "");
+        errorProvider.SetError(amountInput, amountInvalid ? Strings.AmountMustBePositive : "");
+        errorProvider.SetError(categoryCombo, categoryInvalid ? Strings.CategoryRequired : "");
 
         if (amountInvalid || categoryInvalid)
         {
