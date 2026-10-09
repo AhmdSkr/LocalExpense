@@ -22,6 +22,10 @@
   <data name="CategoryRequired" xml:space="preserve">
     <value>Category is required.</value>
   </data>
+  <data name="CsvFileFilter" xml:space="preserve">
+    <value>CSV files (*.csv)|*.csv|All files (*.*)|*.*</value>
+    <comment>SaveFileDialog filter: display name|pattern pairs separated by |; keep the patterns.</comment>
+  </data>
   <data name="DeleteManyPrompt" xml:space="preserve">
     <value>Delete the {0} selected transactions?</value>
     <comment>{0} is the number of selected rows (2 or more).</comment>
@@ -35,6 +39,18 @@
   </data>
   <data name="EndBeforeStart" xml:space="preserve">
     <value>The end date is before the start date.</value>
+  </data>
+  <data name="ExportDone" xml:space="preserve">
+    <value>Exported {0} transactions to {1}.</value>
+    <comment>{0} is the number of rows, {1} the file path.</comment>
+  </data>
+  <data name="ExportFailed" xml:space="preserve">
+    <value>The export failed and no file was written to {0}: {1}</value>
+    <comment>{0} is the chosen file path, {1} the system's error message.</comment>
+  </data>
+  <data name="ExportTitle" xml:space="preserve">
+    <value>Export transactions</value>
+    <comment>Title of the save-file dialog.</comment>
   </data>
   <data name="TransactionGone" xml:space="preserve">
     <value>That transaction no longer exists.</value>

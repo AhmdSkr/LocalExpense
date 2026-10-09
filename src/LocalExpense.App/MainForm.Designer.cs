@@ -43,6 +43,7 @@
             addButton = new Button();
             editButton = new Button();
             deleteButton = new Button();
+            exportButton = new Button();
             filterPanel = new FlowLayoutPanel();
             fromLabel = new Label();
             fromPicker = new DateTimePicker();
@@ -52,11 +53,15 @@
             categoryFilter = new ComboBox();
             clearFilterButton = new Button();
             errorProvider = new ErrorProvider(components);
+            exportMenu = new ContextMenuStrip(components);
+            exportFilteredMenuItem = new ToolStripMenuItem();
+            exportAllMenuItem = new ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)transactionsGrid).BeginInit();
             ((System.ComponentModel.ISupportInitialize)transactionBindingSource).BeginInit();
             toolbarPanel.SuspendLayout();
             filterPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)errorProvider).BeginInit();
+            exportMenu.SuspendLayout();
             SuspendLayout();
             // 
             // transactionsGrid
@@ -84,6 +89,7 @@
             toolbarPanel.Controls.Add(addButton);
             toolbarPanel.Controls.Add(editButton);
             toolbarPanel.Controls.Add(deleteButton);
+            toolbarPanel.Controls.Add(exportButton);
             toolbarPanel.Dock = DockStyle.Top;
             toolbarPanel.Location = new Point(0, 0);
             toolbarPanel.Name = "toolbarPanel";
@@ -123,6 +129,16 @@
             resources.ApplyResources(deleteButton, "deleteButton");
             deleteButton.UseVisualStyleBackColor = true;
             deleteButton.Click += deleteButton_Click;
+            //
+            // exportButton
+            //
+            exportButton.AutoSize = true;
+            exportButton.Name = "exportButton";
+            exportButton.Size = new Size(75, 26);
+            exportButton.TabIndex = 3;
+            resources.ApplyResources(exportButton, "exportButton");
+            exportButton.UseVisualStyleBackColor = true;
+            exportButton.Click += exportButton_Click;
             //
             // filterPanel
             //
@@ -220,6 +236,24 @@
             errorProvider.BlinkStyle = ErrorBlinkStyle.NeverBlink;
             errorProvider.ContainerControl = this;
             //
+            // exportMenu
+            //
+            exportMenu.Items.AddRange(new ToolStripItem[] { exportFilteredMenuItem, exportAllMenuItem });
+            exportMenu.Name = "exportMenu";
+            resources.ApplyResources(exportMenu, "exportMenu");
+            //
+            // exportFilteredMenuItem
+            //
+            exportFilteredMenuItem.Name = "exportFilteredMenuItem";
+            resources.ApplyResources(exportFilteredMenuItem, "exportFilteredMenuItem");
+            exportFilteredMenuItem.Click += exportFilteredMenuItem_Click;
+            //
+            // exportAllMenuItem
+            //
+            exportAllMenuItem.Name = "exportAllMenuItem";
+            resources.ApplyResources(exportAllMenuItem, "exportAllMenuItem");
+            exportAllMenuItem.Click += exportAllMenuItem_Click;
+            //
             // idColumn
             // 
             idColumn.DataPropertyName = "Id";
@@ -284,6 +318,7 @@
             filterPanel.ResumeLayout(false);
             filterPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)errorProvider).EndInit();
+            exportMenu.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -301,6 +336,7 @@
         private Button addButton;
         private Button editButton;
         private Button deleteButton;
+        private Button exportButton;
         private FlowLayoutPanel filterPanel;
         private Label fromLabel;
         private DateTimePicker fromPicker;
@@ -310,5 +346,8 @@
         private ComboBox categoryFilter;
         private Button clearFilterButton;
         private ErrorProvider errorProvider;
+        private ContextMenuStrip exportMenu;
+        private ToolStripMenuItem exportFilteredMenuItem;
+        private ToolStripMenuItem exportAllMenuItem;
     }
 }

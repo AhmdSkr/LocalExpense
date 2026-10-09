@@ -90,6 +90,15 @@ namespace LocalExpense {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to CSV files (*.csv)|*.csv|All files (*.*)|*.*.
+        /// </summary>
+        internal static string CsvFileFilter {
+            get {
+                return ResourceManager.GetString("CsvFileFilter", resourceCulture);
+            }
+        }
+
+        /// <summary>
         ///   Looks up a localized string similar to Delete the {0} selected transactions?.
         /// </summary>
         internal static string DeleteManyPrompt {
@@ -124,6 +133,33 @@ namespace LocalExpense {
             get
             {
                 return ResourceManager.GetString("EndBeforeStart", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized string similar to Exported {0} transactions to {1}..
+        /// </summary>
+        internal static string ExportDone {
+            get {
+                return ResourceManager.GetString("ExportDone", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized string similar to The export failed and no file was written to {0}: {1}.
+        /// </summary>
+        internal static string ExportFailed {
+            get {
+                return ResourceManager.GetString("ExportFailed", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized string similar to Export transactions.
+        /// </summary>
+        internal static string ExportTitle {
+            get {
+                return ResourceManager.GetString("ExportTitle", resourceCulture);
             }
         }
 

@@ -1,3 +1,4 @@
+using System.Text;
 using LocalExpense.Models;
 using LocalExpense.Services;
 
@@ -39,6 +40,15 @@ public partial class MainForm : Form
 
     private async void deleteButton_Click(object? sender, EventArgs e) =>
         await RunGuardedAsync(DeleteSelectedAsync);
+
+    private void exportButton_Click(object? sender, EventArgs e) =>
+        exportMenu.Show(exportButton, new Point(0, exportButton.Height));
+
+    private async void exportFilteredMenuItem_Click(object? sender, EventArgs e) =>
+        await RunGuardedAsync(() => ExportAsync(filtered: true));
+
+    private async void exportAllMenuItem_Click(object? sender, EventArgs e) =>
+        await RunGuardedAsync(() => ExportAsync(filtered: false));
 
     private async void transactionsGrid_CellDoubleClick(object? sender, DataGridViewCellEventArgs e)
     {
@@ -266,6 +276,76 @@ public partial class MainForm : Form
 
         await service!.DeleteManyAsync(selected.Select(t => t.Id).ToArray());
         await ReloadAsync();
+    }
+
+    /// <summary>
+    /// Exports to CSV. The filter values are read before the dialog opens, and the rows come from the database
+    /// (not the grid) after the file name is chosen, so the file reflects the data as of the save.
+    /// </summary>
+    private async Task ExportAsync(bool filtered)
+    {
+        if (service is null)
+        {
+            return;
+        }
+
+        var from = filtered ? FromDate : null;
+        var to = filtered ? ToDate : null;
+        var category = filtered ? SelectedCategory : null;
+        if (from > to)
+        {
+            MessageBox.Show(this, Strings.EndBeforeStart, Text, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            return;
+        }
+
+        using var dialog = new SaveFileDialog
+        {
+            Title = Strings.ExportTitle,
+            Filter = Strings.CsvFileFilter,
+            DefaultExt = "csv",
+            AddExtension = true,
+            OverwritePrompt = true,
+            FileName = CsvExporter.SuggestFileName(from, to, category),
+        };
+        if (dialog.ShowDialog(this) != DialogResult.OK)
+        {
+            return;
+        }
+
+        var path = dialog.FileName;
+        var rows = filtered
+            ? await service.GetFilteredAsync(from, to, category)
+            : await service.GetAllAsync();
+        try
+        {
+            await Task.Run(() => WriteCsvFile(path, rows));
+        }
+        catch (Exception ex) when (ex is IOException or UnauthorizedAccessException or NotSupportedException)
+        {
+            MessageBox.Show(this, string.Format(Strings.ExportFailed, path, ex.Message), Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
+            return;
+        }
+
+        MessageBox.Show(this, string.Format(Strings.ExportDone, rows.Count, path), Text, MessageBoxButtons.OK, MessageBoxIcon.Information);
+    }
+
+    // Writes next to the target and moves into place, so a failure never leaves a half-written or truncated file.
+    private static void WriteCsvFile(string path, IEnumerable<Transaction> rows)
+    {
+        var temp = Path.Combine(Path.GetDirectoryName(path)!, $"{Path.GetFileName(path)}.{Guid.NewGuid():N}.tmp");
+        try
+        {
+            using (var writer = new StreamWriter(temp, false, new UTF8Encoding(encoderShouldEmitUTF8Identifier: true)))
+            {
+                CsvExporter.Write(rows, writer);
+            }
+
+            File.Move(temp, path, overwrite: true);
+        }
+        finally
+        {
+            File.Delete(temp);
+        }
     }
 
     private List<Transaction> SelectedTransactions() =>
