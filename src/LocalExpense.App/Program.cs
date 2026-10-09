@@ -4,6 +4,7 @@ using Microsoft.Data.Sqlite;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
 
 namespace LocalExpense
 {
@@ -23,6 +24,11 @@ namespace LocalExpense
 
             // Not given args: the command-line configuration provider would reject a bare switch like --demo.
             var builder = Host.CreateApplicationBuilder();
+
+            // The host's defaults also log to the console and the Windows Application event log, which would put a desktop app's
+            // routine warnings (such as EF Core's on every new demo database) in the user's event log. Keep only the debugger output.
+            builder.Logging.ClearProviders();
+            builder.Logging.AddDebug();
 
             // OnConfiguring is skipped when DI supplies options, so create the folder here.
             Directory.CreateDirectory(Path.GetDirectoryName(dbPath)!);
