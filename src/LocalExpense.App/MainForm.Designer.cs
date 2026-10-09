@@ -1,6 +1,6 @@
 ﻿namespace LocalExpense
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         /// Required designer variable.
@@ -32,12 +32,12 @@
             DataGridView transactionsGrid;
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
-            transactionBindingSource = new BindingSource(components);
             idColumn = new DataGridViewTextBoxColumn();
             dateColumn = new DataGridViewTextBoxColumn();
             categoryColumn = new DataGridViewTextBoxColumn();
             amountColumn = new DataGridViewTextBoxColumn();
             noteColumn = new DataGridViewTextBoxColumn();
+            transactionBindingSource = new BindingSource(components);
             transactionsGrid = new DataGridView();
             ((System.ComponentModel.ISupportInitialize)transactionsGrid).BeginInit();
             ((System.ComponentModel.ISupportInitialize)transactionBindingSource).BeginInit();
@@ -57,10 +57,6 @@
             transactionsGrid.ReadOnly = true;
             transactionsGrid.Size = new Size(800, 450);
             transactionsGrid.TabIndex = 0;
-            // 
-            // transactionBindingSource
-            // 
-            transactionBindingSource.DataSource = typeof(Models.Transaction);
             // 
             // idColumn
             // 
@@ -105,14 +101,18 @@
             noteColumn.Name = "noteColumn";
             noteColumn.ReadOnly = true;
             // 
-            // Form1
+            // transactionBindingSource
+            // 
+            transactionBindingSource.DataSource = typeof(Models.Transaction);
+            // 
+            // MainForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(transactionsGrid);
-            Name = "Form1";
-            Text = "Form1";
+            Name = "MainForm";
+            Text = "Local Expenses";
             ((System.ComponentModel.ISupportInitialize)transactionsGrid).EndInit();
             ((System.ComponentModel.ISupportInitialize)transactionBindingSource).EndInit();
             ResumeLayout(false);

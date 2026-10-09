@@ -19,7 +19,7 @@ namespace LocalExpense
             Directory.CreateDirectory(Path.GetDirectoryName(AppDbContext.DbPath)!);
             builder.Services.AddDbContextFactory<AppDbContext>(o => o.UseSqlite($"Data Source={AppDbContext.DbPath}"));
             builder.Services.AddSingleton<Services.TransactionService>();
-            builder.Services.AddTransient<Form1>();
+            builder.Services.AddTransient<MainForm>();
 
             using var host = builder.Build();
 
@@ -29,7 +29,7 @@ namespace LocalExpense
             }
 
             ApplicationConfiguration.Initialize();
-            Application.Run(host.Services.GetRequiredService<Form1>());
+            Application.Run(host.Services.GetRequiredService<MainForm>());
         }
     }
 }
