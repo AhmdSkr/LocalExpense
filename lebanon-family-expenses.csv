@@ -1,0 +1,1384 @@
+Date,Category,Amount,Note
+2023-10-01,Housing,-300.00,Rent - October
+2023-10-02,Groceries,-31.40,Weekly shop at the supermarket
+2023-10-03,Housing,-40.00,Building service charges - October
+2023-10-03,Groceries,-4.50,Manoushe za'atar and labneh for breakfast
+2023-10-04,Transport,-55.00,School bus for Layla - October
+2023-10-04,Fuel,-22.00,"Petrol, half tank"
+2023-10-05,Utilities,-30.00,"Internet subscription, October"
+2023-10-05,Education,-650.00,"Joe's university registration, first payment"
+2023-10-05,Groceries,-12.75,"Fruit and vegetables, the Monday vendor"
+2023-10-06,Generator,-70.00,Generator subscription - October
+2023-10-06,Health,-14.20,Pharmacy: Teta's blood pressure pills
+2023-10-07,Utilities,-10.00,Mobile top-up for Elias
+2023-10-08,Insurance,-85.00,"Family health insurance premium, October"
+2023-10-08,Dining,-18.50,"Sunday lunch after church, family table"
+2023-10-10,Salary,90.00,Teta Marta's pension
+2023-10-10,Groceries,-26.80,"Chicken, rice, olive oil"
+2023-10-11,Transport,-6.00,"Service taxi for Joe, Zahlé to Beirut, 3 rides"
+2023-10-12,Remittance,250.00,Tony's transfer from Montreal - October
+2023-10-12,Education,-45.00,Books and stationery for Joe
+2023-10-13,Groceries,-5.25,Bakery run: Arabic bread and croissants
+2023-10-14,Other,-8.00,Haircut for Elias
+2023-10-14,Groceries,-3.50,خبز عربي وزعتر من فرن الحي
+2023-10-15,Family support,-60.00,"Aunt Hanan's monthly help, October"
+2023-10-15,Education,-80.00,"Layla's math tutor, October"
+2023-10-16,Groceries,-38.10,"Weekly shop, plus cleaning products"
+2023-10-17,Fuel,-24.00,Petrol
+2023-10-18,Health,-9.40,Pharmacy: cough syrup for Layla
+2023-10-19,Utilities,-12.00,"Water tanker, 5 cubic metres"
+2023-10-20,Utilities,-22.00,EDL electricity bill - October
+2023-10-20,Groceries,-6.30,Manoushe cheese x3 on a rainy morning
+2023-10-20,Salary,140.00,"Evening tutoring, two students"
+2023-10-21,Entertainment,-15.00,"Cinema, Joe and Layla"
+2023-10-22,Dining,-22.00,Falafel and shawarma night
+2023-10-23,Groceries,-29.60,"Vegetables, eggs, yogurt"
+2023-10-25,Groceries,-8.20,Bakery and a box of sweets for Teta
+2023-10-26,Fuel,-20.00,Petrol
+2023-10-27,Utilities,-8.00,Mobile top-up for Rima
+2023-10-28,Salary,950.00,Elias's school salary - October
+2023-10-28,Clothing,-35.00,Winter socks and a sweater for Layla
+2023-10-29,Salary,600.00,"Rima's pharmacy salary, October"
+2023-10-30,Groceries,-33.70,Weekly shop
+2023-11-01,Housing,-300.00,Rent - November
+2023-11-01,Groceries,-9.90,"Fruit, Tuesday market"
+2023-11-02,Fuel,-23.00,Petrol
+2023-11-03,Housing,-40.00,Building service charges - November
+2023-11-03,Health,-18.50,Pharmacy: vitamins and plasters
+2023-11-04,Transport,-55.00,School bus for Layla - November
+2023-11-04,Dining,-16.00,Saturday manoushe at the corner place
+2023-11-05,Utilities,-30.00,"Internet subscription, November"
+2023-11-05,Groceries,-35.20,Weekly shop
+2023-11-06,Generator,-72.00,Generator subscription - November
+2023-11-07,Transport,-8.00,"Service taxi for Joe, 4 rides"
+2023-11-08,Insurance,-85.00,"Family health insurance premium, November"
+2023-11-08,Education,-80.00,"Layla's math tutor, November"
+2023-11-09,Groceries,-5.60,Bakery run
+2023-11-10,Salary,90.00,Teta Marta's pension
+2023-11-10,Utilities,-10.00,Mobile top-up for Elias
+2023-11-11,Groceries,-27.90,"Chicken, lentils, cooking gas refill share"
+2023-11-12,Remittance,250.00,Tony's transfer from Montreal - November
+2023-11-12,Dining,-24.50,Sunday lunch with Teta's sister
+2023-11-13,Utilities,-12.00,Water tanker
+2023-11-14,Fuel,-21.00,Petrol
+2023-11-15,Family support,-60.00,"Aunt Hanan's monthly help, November"
+2023-11-15,Health,-22.00,Pharmacy: Teta's heart medication
+2023-11-16,Groceries,-31.40,Weekly shop
+2023-11-17,Entertainment,-12.00,"Board games night, snacks and drinks"
+2023-11-18,Other,-6.50,Newspaper and a magazine for Teta
+2023-11-18,Salary,160.00,"Evening tutoring, exam preparation"
+2023-11-19,Groceries,-7.30,"Manoushe lahm b'ajin, Sunday brunch"
+2023-11-20,Utilities,-24.00,EDL electricity bill - November
+2023-11-20,Education,-38.00,Printing and notes for Joe's exams
+2023-11-21,Transport,-7.00,Service taxi for Joe
+2023-11-22,Groceries,-34.80,Weekly shop
+2023-11-23,Fuel,-22.50,Petrol
+2023-11-24,Clothing,-48.00,Layla's winter jacket on sale
+2023-11-25,Utilities,-8.00,Mobile top-up for Rima
+2023-11-26,Dining,-19.00,Dinner out after Joe's first midterm
+2023-11-27,Groceries,-6.10,Bakery run
+2023-11-28,Salary,950.00,Elias's school salary - November
+2023-11-29,Salary,600.00,"Rima's pharmacy salary, November"
+2023-11-29,Health,-11.50,Pharmacy: Layla's cold
+2023-11-30,Groceries,-30.20,Weekly shop
+2023-12-01,Housing,-300.00,Rent - December
+2023-12-01,Groceries,-28.50,"Weekly shop, December list"
+2023-12-02,Fuel,-24.00,Petrol
+2023-12-03,Housing,-40.00,Building service charges - December
+2023-12-03,Dining,-21.00,Sunday lunch
+2023-12-04,Transport,-55.00,School bus for Layla - December
+2023-12-04,Transport,-8.00,Service taxi for Joe
+2023-12-05,Utilities,-30.00,"Internet subscription, December"
+2023-12-05,Health,-16.80,Pharmacy: flu medicine for Elias
+2023-12-06,Generator,-85.00,Generator subscription - December
+2023-12-06,Education,-80.00,"Layla's math tutor, December"
+2023-12-07,Groceries,-5.40,Manoushe and fresh bread
+2023-12-08,Insurance,-85.00,"Family health insurance premium, December"
+2023-12-08,Clothing,-60.00,"Boots for Elias, end of season sale"
+2023-12-09,Utilities,-10.00,Mobile top-up for Elias
+2023-12-10,Salary,90.00,Teta Marta's pension
+2023-12-10,Other,-85.00,"Heater repair, Teta's room, the technician's visit"
+2023-12-11,Groceries,-36.10,Weekly shop
+2023-12-12,Remittance,250.00,Tony's transfer from Montreal - December
+2023-12-12,Utilities,-12.00,Water tanker
+2023-12-12,Salary,90.00,"Evening tutoring, one student"
+2023-12-14,Fuel,-23.00,Petrol
+2023-12-15,Family support,-60.00,"Aunt Hanan's monthly help, December"
+2023-12-15,Entertainment,-20.00,"Christmas market in Zahlé, hot chocolate and trinkets"
+2023-12-16,Groceries,-41.30,Weekly shop plus baking supplies for ma'amoul
+2023-12-17,Dining,-17.50,Sunday brunch
+2023-12-18,Gifts,-60.00,Gifts for the cousins' children
+2023-12-19,Health,-13.00,Pharmacy: cough drops
+2023-12-20,Utilities,-27.00,EDL electricity bill - December
+2023-12-20,Groceries,-52.00,"Christmas ingredients: nuts, dates, cheese"
+2023-12-21,Groceries,-18.60,Fresh fish for the holiday week
+2023-12-22,Fuel,-20.00,Petrol
+2023-12-23,Groceries,-14.00,"Last-minute shopping, fruits and sweets"
+2023-12-24,Celebrations,-310.00,"Christmas Eve table and presents, family gathering"
+2023-12-26,Groceries,-27.80,Weekly shop after the holiday
+2023-12-27,Utilities,-8.00,Mobile top-up for Rima
+2023-12-28,Salary,950.00,Elias's school salary - December
+2023-12-29,Salary,600.00,"Rima's pharmacy salary, December"
+2023-12-29,Dining,-26.00,Dinner out with Tony's in-laws
+2023-12-30,Groceries,-33.00,New Year's Eve supplies
+2023-12-31,Savings,-100.00,"Put aside for the cushion, end of year"
+2024-01-01,Housing,-300.00,Rent - January
+2024-01-02,Groceries,-30.60,Weekly shop
+2024-01-03,Housing,-40.00,Building service charges - January
+2024-01-03,Fuel,-24.00,Petrol
+2024-01-04,Transport,-55.00,School bus for Layla - January
+2024-01-04,Transport,-8.00,Service taxi for Joe
+2024-01-05,Utilities,-30.00,"Internet subscription, January"
+2024-01-05,Health,-20.00,Pharmacy: Teta's monthly pills
+2024-01-06,Generator,-90.00,Generator subscription - January
+2024-01-06,Education,-80.00,"Layla's math tutor, January"
+2024-01-07,Dining,-14.50,Sunday manoushe
+2024-01-08,Insurance,-85.00,"Family health insurance premium, January"
+2024-01-08,Groceries,-5.80,Bakery run
+2024-01-09,Utilities,-12.00,Water tanker during the cold snap
+2024-01-10,Salary,90.00,Teta Marta's pension
+2024-01-10,Other,-24.00,"Diesel for the heater, small barrel"
+2024-01-11,Groceries,-34.40,Weekly shop
+2024-01-12,Remittance,250.00,Tony's transfer from Montreal - January
+2024-01-12,Utilities,-10.00,Mobile top-up for Elias
+2024-01-13,Clothing,-30.00,Warm slippers and gloves
+2024-01-14,Groceries,-9.20,"Fruit, oranges for the winter cold"
+2024-01-15,Family support,-60.00,"Aunt Hanan's monthly help, January"
+2024-01-15,Fuel,-22.00,Petrol
+2024-01-16,Education,-60.00,Joe's second semester textbooks
+2024-01-17,Health,-12.30,Pharmacy: syrup and tissues
+2024-01-18,Groceries,-28.90,Weekly shop
+2024-01-19,Dining,-18.00,Quick dinner with Layla's friends' parents
+2024-01-20,Utilities,-31.00,EDL electricity bill - January
+2024-01-20,Other,-15.00,Spare keys made
+2024-01-21,Groceries,-6.70,Bakery run
+2024-01-21,Dining,-26.00,"Lunch at the restaurant, four people, with arak for Elias, and fresh mezze"
+2024-01-22,Transport,-7.00,Service taxi for Joe
+2024-01-23,Fuel,-21.00,Petrol
+2024-01-25,Groceries,-32.60,Weekly shop
+2024-01-26,Utilities,-8.00,Mobile top-up for Rima
+2024-01-27,Entertainment,-14.00,"Cinema, Joe and Layla"
+2024-01-28,Salary,950.00,Elias's school salary - January
+2024-01-28,Dining,-23.50,Saturday lunch with Rima's colleagues
+2024-01-29,Salary,600.00,"Rima's pharmacy salary, January"
+2024-01-30,Savings,-50.00,Small savings top-up
+2024-02-01,Housing,-300.00,Rent - February
+2024-02-01,Groceries,-33.20,Weekly shop
+2024-02-02,Fuel,-23.00,Petrol
+2024-02-03,Housing,-40.00,Building service charges - February
+2024-02-03,Dining,-17.50,Saturday manoushe
+2024-02-04,Transport,-55.00,School bus for Layla - February
+2024-02-04,Health,-15.60,Pharmacy: vitamins
+2024-02-05,Utilities,-30.00,"Internet subscription, February"
+2024-02-05,Transport,-8.00,Service taxi for Joe
+2024-02-06,Generator,-88.00,Generator subscription - February
+2024-02-06,Education,-80.00,"Layla's math tutor, February"
+2024-02-07,Groceries,-6.20,Bakery run
+2024-02-08,Insurance,-85.00,"Family health insurance premium, February"
+2024-02-08,Utilities,-10.00,Mobile top-up for Elias
+2024-02-09,Groceries,-30.80,Weekly shop
+2024-02-09,Other,-2.00,-rounded the bill up at the bakery
+2024-02-10,Salary,90.00,Teta Marta's pension
+2024-02-10,Utilities,-12.00,Water tanker
+2024-02-11,Dining,-20.00,Sunday lunch
+2024-02-12,Remittance,250.00,Tony's transfer from Montreal - February
+2024-02-12,Other,-12.00,Haircut for Joe
+2024-02-14,Gifts,-35.00,"Valentine's flowers and chocolate, Rima"
+2024-02-15,Family support,-60.00,"Aunt Hanan's monthly help, February"
+2024-02-15,Fuel,-22.00,Petrol
+2024-02-16,Groceries,-27.50,Weekly shop
+2024-02-17,Health,-11.20,Pharmacy: Teta's eye drops
+2024-02-18,Dining,-15.50,Saturday falafel
+2024-02-19,Groceries,-8.60,Fruit and vegetables
+2024-02-20,Utilities,-29.00,EDL electricity bill - February
+2024-02-20,Education,-25.00,"School trip contribution, Layla"
+2024-02-22,Groceries,-31.90,Weekly shop
+2024-02-22,Salary,150.00,"Evening tutoring, two students"
+2024-02-23,Fuel,-21.00,Petrol
+2024-02-24,Other,-180.00,"Bruno the stray puppy: vaccines, collar and bed"
+2024-02-25,Groceries,-14.80,"Dog food and treats, first bag"
+2024-02-26,Utilities,-8.00,Mobile top-up for Rima
+2024-02-27,Groceries,-6.00,Bakery run
+2024-02-28,Salary,950.00,Elias's school salary - February
+2024-02-28,Entertainment,-12.00,Board games and popcorn night
+2024-02-29,Salary,600.00,"Rima's pharmacy salary, February"
+2024-02-29,Groceries,-29.40,Weekly shop for leap day
+2024-03-01,Housing,-300.00,Rent - March
+2024-03-01,Groceries,-29.00,Weekly shop
+2024-03-02,Fuel,-24.00,Petrol
+2024-03-03,Housing,-40.00,Building service charges - March
+2024-03-03,Other,-22.00,Bruno's flea treatment
+2024-03-04,Transport,-55.00,School bus for Layla - March
+2024-03-04,Transport,-8.00,Service taxi for Joe
+2024-03-05,Utilities,-30.00,"Internet subscription, March"
+2024-03-05,Health,-18.50,Pharmacy: Teta's pills
+2024-03-06,Generator,-75.00,Generator subscription - March
+2024-03-06,Education,-80.00,"Layla's math tutor, March"
+2024-03-07,Groceries,-5.90,Bakery run
+2024-03-08,Insurance,-85.00,"Family health insurance premium, March"
+2024-03-08,Utilities,-10.00,Mobile top-up for Elias
+2024-03-09,Dining,-22.50,Saturday lunch out
+2024-03-10,Salary,90.00,Teta Marta's pension
+2024-03-10,Utilities,-12.00,Water tanker
+2024-03-11,Groceries,-33.80,Weekly shop
+2024-03-12,Remittance,250.00,Tony's transfer from Montreal - March
+2024-03-13,Fuel,-22.00,Petrol
+2024-03-14,Groceries,-12.40,Fruit and vegetables
+2024-03-15,Family support,-60.00,"Aunt Hanan's monthly help, March"
+2024-03-15,Health,-9.80,Pharmacy: plasters and antiseptic
+2024-03-16,Entertainment,-18.00,Concert ticket for Joe
+2024-03-17,Dining,-25.00,"Sunday lunch, St Patrick's with friends"
+2024-03-18,Groceries,-31.20,Weekly shop
+2024-03-20,Utilities,-25.00,EDL electricity bill - March
+2024-03-20,Education,-40.00,"Exam fees, Joe's lab"
+2024-03-21,Groceries,-6.50,Bakery run
+2024-03-22,Fuel,-21.00,Petrol
+2024-03-23,Salary,130.00,Evening tutoring
+2024-03-24,Groceries,-36.40,Weekly shop plus Easter baking ingredients
+2024-03-26,Utilities,-8.00,Mobile top-up for Rima
+2024-03-27,Groceries,-24.00,Chocolate eggs and Easter sweets
+2024-03-28,Salary,950.00,Elias's school salary - March
+2024-03-28,Gifts,-45.00,Easter gifts for the nieces
+2024-03-29,Salary,600.00,"Rima's pharmacy salary, March"
+2024-03-29,Clothing,-72.00,"New shoes for Layla, she grew"
+2024-03-30,Groceries,-30.80,Pre-Easter shop
+2024-03-31,Celebrations,-135.00,"Easter lunch, our turn to host"
+2024-04-01,Housing,-300.00,Rent - April
+2024-04-01,Groceries,-9.30,Leftovers day: bread and milk
+2024-04-02,Fuel,-24.00,Petrol
+2024-04-03,Housing,-40.00,Building service charges - April
+2024-04-03,Health,-14.00,"Pharmacy: allergy tablets, spring pollen"
+2024-04-04,Transport,-55.00,School bus for Layla - April
+2024-04-04,Transport,-8.00,Service taxi for Joe
+2024-04-05,Utilities,-30.00,"Internet subscription, April"
+2024-04-05,Dining,-17.00,Friday manoushe breakfast
+2024-04-06,Generator,-68.00,Generator subscription - April
+2024-04-06,Education,-80.00,"Layla's math tutor, April"
+2024-04-06,Dining,-14.00,"Café Najjar: ka'ak, café blanc and juice, Zahlé"
+2024-04-07,Groceries,-34.60,Weekly shop
+2024-04-08,Insurance,-85.00,"Family health insurance premium, April"
+2024-04-08,Utilities,-10.00,Mobile top-up for Elias
+2024-04-09,Other,-18.00,Bruno's vet follow-up
+2024-04-10,Salary,90.00,Teta Marta's pension
+2024-04-10,Utilities,-12.00,Water tanker
+2024-04-11,Groceries,-6.40,Bakery run
+2024-04-12,Remittance,250.00,Tony's transfer from Montreal - April
+2024-04-12,Dining,-21.50,Sunday lunch
+2024-04-13,Fuel,-22.00,Petrol
+2024-04-14,Groceries,-28.20,Weekly shop
+2024-04-15,Family support,-60.00,"Aunt Hanan's monthly help, April"
+2024-04-16,Health,-26.00,"Dentist, Layla's check-up"
+2024-04-17,Entertainment,-15.00,Family walk and ice cream by the river
+2024-04-18,Groceries,-31.00,Weekly shop
+2024-04-19,Clothing,-45.00,Light jacket for Joe
+2024-04-20,Utilities,-21.00,EDL electricity bill - April
+2024-04-20,Fuel,-23.00,Petrol
+2024-04-21,Dining,-19.00,Dinner out
+2024-04-23,Groceries,-27.40,Weekly shop
+2024-04-24,Utilities,-8.00,Mobile top-up for Rima
+2024-04-25,Groceries,-7.20,Bakery run
+2024-04-27,Gifts,-30.00,Gift for Teta's name day
+2024-04-28,Salary,950.00,Elias's school salary - April
+2024-04-28,Dining,-23.00,Sunday lunch with Aunt Hanan
+2024-04-29,Salary,600.00,"Rima's pharmacy salary, April"
+2024-04-30,Savings,-50.00,Savings top-up
+2024-05-01,Housing,-300.00,Rent - May
+2024-05-01,Groceries,-30.50,Weekly shop
+2024-05-02,Fuel,-24.00,Petrol
+2024-05-03,Housing,-40.00,Building service charges - May
+2024-05-03,Health,-17.60,Pharmacy: Teta's monthly pills
+2024-05-04,Transport,-55.00,School bus for Layla - May
+2024-05-04,Dining,-16.00,Saturday manoushe
+2024-05-05,Utilities,-30.00,"Internet subscription, May"
+2024-05-05,Transport,-8.00,Service taxi for Joe
+2024-05-06,Generator,-66.00,Generator subscription - May
+2024-05-06,Education,-80.00,"Layla's math tutor, May"
+2024-05-07,Groceries,-6.00,Bakery run
+2024-05-08,Insurance,-85.00,"Family health insurance premium, May"
+2024-05-08,Utilities,-10.00,Mobile top-up for Elias
+2024-05-08,Other,-9.00,"Teta said ""never again"" about the hair dye"
+2024-05-09,Groceries,-35.90,Weekly shop
+2024-05-10,Salary,90.00,Teta Marta's pension
+2024-05-10,Utilities,-12.00,Water tanker
+2024-05-11,Dining,-18.00,Lunch after Mother's Day church
+2024-05-12,Remittance,250.00,Tony's transfer from Montreal - May
+2024-05-12,Gifts,-40.00,Mother's Day flowers and a card
+2024-05-13,Fuel,-22.00,Petrol
+2024-05-14,Groceries,-11.80,Fruit and vegetables
+2024-05-15,Family support,-60.00,"Aunt Hanan's monthly help, May"
+2024-05-15,Education,-120.00,Joe's end of semester lab fees
+2024-05-16,Health,-8.50,Pharmacy: sunscreen
+2024-05-18,Groceries,-28.60,Weekly shop
+2024-05-19,Clothing,-55.00,Summer sandals and shirts
+2024-05-20,Utilities,-20.00,EDL electricity bill - May
+2024-05-20,Fuel,-21.00,Petrol
+2024-05-22,Groceries,-33.30,Weekly shop
+2024-05-23,Entertainment,-20.00,"Open-air film night, ticket and snacks"
+2024-05-24,Salary,170.00,"Evening tutoring, official exam preparation"
+2024-05-25,Utilities,-8.00,Mobile top-up for Rima
+2024-05-26,Groceries,-6.80,Bakery run
+2024-05-27,Dining,-24.50,"Sunday lunch, Joe's friends visiting"
+2024-05-28,Salary,950.00,Elias's school salary - May
+2024-05-29,Salary,600.00,"Rima's pharmacy salary, May"
+2024-05-29,Groceries,-30.00,Weekly shop
+2024-05-30,Savings,-75.00,Savings top-up
+2024-06-01,Housing,-300.00,Rent - June
+2024-06-01,Groceries,-31.60,Weekly shop
+2024-06-02,Fuel,-24.00,Petrol
+2024-06-03,Housing,-40.00,Building service charges - June
+2024-06-03,Transport,-8.00,Service taxi for Joe
+2024-06-04,Transport,-55.00,School bus for Layla - June
+2024-06-04,Health,-12.60,Pharmacy: eye drops
+2024-06-05,Utilities,-30.00,"Internet subscription, June"
+2024-06-05,Education,-80.00,"Layla's math tutor, June"
+2024-06-06,Generator,-80.00,Generator subscription - June
+2024-06-06,Clothing,-95.00,Rima's dress and shoes for Maya's wedding
+2024-06-07,Clothing,-110.00,Elias's wedding suit
+2024-06-08,Insurance,-85.00,"Family health insurance premium, June"
+2024-06-08,Celebrations,-420.00,"Cousin Maya's wedding: gift envelope, hall table share and gifts"
+2024-06-09,Dining,-15.00,Coffee and sandwiches the morning after
+2024-06-10,Salary,90.00,Teta Marta's pension
+2024-06-10,Utilities,-12.00,Water tanker
+2024-06-11,Groceries,-29.20,Weekly shop
+2024-06-12,Remittance,250.00,Tony's transfer from Montreal - June
+2024-06-12,Other,-10.00,Haircuts before the wedding week
+2024-06-13,Fuel,-23.00,Petrol
+2024-06-14,Utilities,-10.00,Mobile top-up for Elias
+2024-06-15,Family support,-60.00,"Aunt Hanan's monthly help, June"
+2024-06-15,Education,-95.00,Layla's end-of-year exam fees
+2024-06-16,Groceries,-6.30,Bakery run
+2024-06-17,Dining,-26.00,Father's Day lunch
+2024-06-18,Groceries,-34.50,Weekly shop
+2024-06-19,Health,-18.00,Pharmacy: Teta's pills
+2024-06-20,Utilities,-26.00,EDL electricity bill - June
+2024-06-20,Entertainment,-14.00,Swimming pool entrance for the kids
+2024-06-22,Fuel,-22.00,Petrol
+2024-06-22,Salary,180.00,"Evening tutoring, summer exam crash course"
+2024-06-24,Groceries,-32.30,Weekly shop
+2024-06-25,Utilities,-8.00,Mobile top-up for Rima
+2024-06-26,Groceries,-8.80,Ice cream and watermelon
+2024-06-27,Dining,-20.00,Saturday dinner
+2024-06-28,Salary,950.00,Elias's school salary - June
+2024-06-28,Savings,-50.00,Savings top-up
+2024-06-29,Salary,600.00,"Rima's pharmacy salary, June"
+2024-07-01,Housing,-300.00,Rent - July
+2024-07-01,Groceries,-33.00,Weekly shop
+2024-07-02,Transport,-8.00,Service taxi for Joe
+2024-07-03,Housing,-40.00,Building service charges - July
+2024-07-03,Fuel,-14.00,Last fill for the old sedan
+2024-07-04,Health,-19.50,Pharmacy: Teta's pills
+2024-07-05,Utilities,-30.00,"Internet subscription, July"
+2024-07-05,Education,-80.00,"Layla's math tutor, July"
+2024-07-05,Remittance,600.00,"Tony's extra for the car fund, with a note: ""buy something safe"""
+2024-07-06,Generator,-95.00,Generator subscription - July
+2024-07-06,Dining,-17.00,Saturday manoushe
+2024-07-07,Other,-35.00,Towing the sedan to the scrapyard
+2024-07-08,Insurance,-85.00,"Family health insurance premium, July"
+2024-07-08,Groceries,-28.60,Weekly shop
+2024-07-09,Utilities,-12.00,Water tanker
+2024-07-10,Salary,90.00,Teta Marta's pension
+2024-07-10,Savings,2200.00,Withdrawn from savings for the car
+2024-07-11,Other,-60.00,Mechanic's inspection fee for the used Kia
+2024-07-12,Remittance,250.00,Tony's transfer from Montreal - July
+2024-07-12,Transport,-4600.00,"Used Kia Rio bought, cash to the dealer"
+2024-07-13,Insurance,-185.00,"Car insurance, first quarter"
+2024-07-14,Fuel,-30.00,First tank of the new car
+2024-07-15,Family support,-60.00,"Aunt Hanan's monthly help, July"
+2024-07-15,Utilities,-10.00,Mobile top-up for Elias
+2024-07-16,Groceries,-31.40,Weekly shop
+2024-07-17,Dining,-24.00,Celebration lunch after buying the car
+2024-07-18,Transport,-35.00,Registration stamp and plates paperwork
+2024-07-20,Utilities,-34.00,EDL electricity bill - July
+2024-07-20,Groceries,-7.20,Bakery run
+2024-07-21,Fuel,-26.00,Petrol
+2024-07-22,Groceries,-34.80,Weekly shop
+2024-07-24,Entertainment,-18.00,Evening drive and ice cream
+2024-07-26,Utilities,-8.00,Mobile top-up for Rima
+2024-07-27,Health,-10.50,Pharmacy: sun cream and a mosquito spray
+2024-07-28,Salary,950.00,Elias's school salary - July
+2024-07-28,Groceries,-29.00,Weekly shop
+2024-07-29,Salary,600.00,"Rima's pharmacy salary, July"
+2024-07-30,Fuel,-24.00,Petrol
+2024-08-01,Housing,-300.00,Rent - August
+2024-08-01,Groceries,-32.60,Weekly shop
+2024-08-02,Health,-9.00,Pharmacy: sunburn cream
+2024-08-03,Housing,-40.00,Building service charges - August
+2024-08-03,Fuel,-26.00,Petrol
+2024-08-04,Dining,-19.50,Sunday lunch
+2024-08-05,Utilities,-30.00,"Internet subscription, August"
+2024-08-05,Groceries,-6.50,Bakery run
+2024-08-06,Generator,-98.00,Generator subscription - August
+2024-08-06,Education,-80.00,"Layla's math tutor, August"
+2024-08-07,Utilities,-12.00,Water tanker
+2024-08-08,Insurance,-85.00,"Family health insurance premium, August"
+2024-08-08,Groceries,-48.00,Supplies for the Batroun week
+2024-08-09,Fuel,-35.00,"Petrol, to the coast"
+2024-08-10,Salary,90.00,Teta Marta's pension
+2024-08-10,Travel,-720.00,"A week in Batroun: rented room, fish at the harbor, ice cream, sunburn"
+2024-08-11,Dining,-62.00,Seafood dinner with Tony's friends
+2024-08-12,Remittance,250.00,Tony's transfer from Montreal - August
+2024-08-14,Utilities,-10.00,Mobile top-up for Elias
+2024-08-15,Family support,-60.00,"Aunt Hanan's monthly help, August"
+2024-08-15,Celebrations,-45.00,August 15th feast lunch contribution
+2024-08-16,Groceries,-35.20,Weekly shop after the holiday
+2024-08-17,Fuel,-27.00,Petrol
+2024-08-18,Dining,-16.00,Sunday manoushe
+2024-08-20,Utilities,-36.00,EDL electricity bill - August
+2024-08-20,Other,-20.00,Bruno at the dog sitter for the week
+2024-08-21,Health,-14.70,Pharmacy: Teta's pills
+2024-08-22,Groceries,-30.00,Weekly shop
+2024-08-24,Utilities,-8.00,Mobile top-up for Rima
+2024-08-26,Groceries,-9.30,Bakery run
+2024-08-27,Clothing,-40.00,Backpack and shoes for school
+2024-08-28,Salary,950.00,Elias's school salary - August
+2024-08-29,Salary,600.00,"Rima's pharmacy salary, August"
+2024-08-29,Fuel,-24.00,Petrol
+2024-08-31,Groceries,-31.50,Weekly shop
+2024-09-01,Housing,-300.00,Rent - September
+2024-09-01,Dining,-20.00,Sunday lunch before school starts
+2024-09-02,Education,-60.00,"Notebooks, pens and a geometry set"
+2024-09-03,Housing,-40.00,Building service charges - September
+2024-09-03,Education,-980.00,"Layla's school fees, uniforms and books"
+2024-09-04,Transport,-55.00,School bus for Layla - September
+2024-09-04,Groceries,-33.60,Weekly shop
+2024-09-05,Utilities,-30.00,"Internet subscription, September"
+2024-09-05,Fuel,-24.00,Petrol
+2024-09-06,Generator,-82.00,Generator subscription - September
+2024-09-06,Transport,-8.00,Service taxi for Joe
+2024-09-07,Health,-15.30,Pharmacy: Teta's pills
+2024-09-08,Insurance,-85.00,"Family health insurance premium, September"
+2024-09-08,Dining,-17.50,Sunday manoushe
+2024-09-09,Utilities,-12.00,Water tanker
+2024-09-10,Salary,90.00,Teta Marta's pension
+2024-09-10,Groceries,-6.00,Bakery run
+2024-09-11,Education,-80.00,"Layla's math tutor, September"
+2024-09-12,Remittance,250.00,Tony's transfer from Montreal - September
+2024-09-12,Utilities,-10.00,Mobile top-up for Elias
+2024-09-13,Groceries,-29.40,Weekly shop
+2024-09-14,Fuel,-22.00,Petrol
+2024-09-14,Other,-4.00,"Municipality parking fine\nPaid at the office, not the meter"
+2024-09-15,Family support,-60.00,"Aunt Hanan's monthly help, September"
+2024-09-15,Education,-130.00,Joe's third-semester fees installment
+2024-09-16,Dining,-23.00,Sunday lunch
+2024-09-18,Groceries,-31.80,Weekly shop
+2024-09-19,Entertainment,-16.00,"Cinema, Joe and Layla"
+2024-09-20,Utilities,-28.00,EDL electricity bill - September
+2024-09-20,Fuel,-23.00,Petrol
+2024-09-22,Clothing,-38.00,Joe's winter pants
+2024-09-23,Groceries,-27.00,Weekly shop
+2024-09-24,Health,-12.00,Pharmacy: vitamins
+2024-09-25,Utilities,-8.00,Mobile top-up for Rima
+2024-09-25,Salary,120.00,Evening tutoring
+2024-09-26,Groceries,-7.40,Bakery run
+2024-09-27,Dining,-21.00,Saturday dinner
+2024-09-28,Salary,1000.00,Elias's school salary - September
+2024-09-28,Savings,-60.00,Savings top-up
+2024-09-29,Salary,600.00,"Rima's pharmacy salary, September"
+2024-09-30,Groceries,-30.20,Weekly shop
+2024-10-01,Housing,-300.00,Rent - October
+2024-10-01,Groceries,-32.40,Weekly shop
+2024-10-02,Fuel,-25.00,Petrol
+2024-10-03,Housing,-40.00,Building service charges - October
+2024-10-03,Transport,-8.00,"Service taxi for Joe, 4 rides"
+2024-10-04,Transport,-55.00,School bus for Layla - October
+2024-10-04,Health,-16.50,Pharmacy: Teta's pills
+2024-10-05,Utilities,-30.00,"Internet subscription, October"
+2024-10-05,Dining,-18.00,Saturday manoushe
+2024-10-06,Generator,-78.00,Generator subscription - October
+2024-10-06,Education,-80.00,"Layla's math tutor, October"
+2024-10-07,Groceries,-6.20,Bakery run
+2024-10-08,Insurance,-85.00,"Family health insurance premium, October"
+2024-10-08,Utilities,-12.00,Water tanker
+2024-10-09,Education,-650.00,"Joe's second-year registration, second payment"
+2024-10-10,Salary,90.00,Teta Marta's pension
+2024-10-10,Utilities,-10.00,Mobile top-up for Elias
+2024-10-11,Groceries,-30.00,Weekly shop
+2024-10-12,Remittance,250.00,Tony's transfer from Montreal - October
+2024-10-13,Dining,-22.50,Sunday lunch
+2024-10-14,Fuel,-24.00,Petrol
+2024-10-15,Family support,-60.00,"Aunt Hanan's monthly help, October"
+2024-10-15,Groceries,-9.80,Fruit and vegetables
+2024-10-16,Entertainment,-14.00,"Cinema, Layla's birthday outing"
+2024-10-17,Gifts,-28.00,Layla's birthday gift and cake
+2024-10-18,Groceries,-31.60,Weekly shop
+2024-10-19,Repairs,-1350.00,Car repairs after a truck clipped the Kia at the roundabout
+2024-10-19,Transport,-18.00,"Taxi back from the garage, ruined Saturday"
+2024-10-20,Utilities,-24.00,EDL electricity bill - October
+2024-10-20,Dining,-14.00,Sandwiches while waiting at the garage
+2024-10-21,Fuel,-12.00,"Petrol, rental car borrowed from cousin Jad"
+2024-10-22,Groceries,-28.50,Weekly shop
+2024-10-23,Health,-7.60,"Pharmacy: bandages, a bruised shoulder"
+2024-10-25,Utilities,-8.00,Mobile top-up for Rima
+2024-10-26,Groceries,-7.10,Bakery run
+2024-10-28,Salary,1000.00,Elias's school salary - October
+2024-10-28,Fuel,-24.00,Petrol
+2024-10-29,Salary,600.00,"Rima's pharmacy salary, October"
+2024-10-30,Groceries,-30.80,Weekly shop
+2024-11-01,Housing,-300.00,Rent - November
+2024-11-01,Groceries,-32.00,Weekly shop
+2024-11-02,Fuel,-24.00,Petrol
+2024-11-03,Housing,-40.00,Building service charges - November
+2024-11-03,Dining,-16.50,Sunday manoushe
+2024-11-04,Transport,-55.00,School bus for Layla - November
+2024-11-04,Transport,-8.00,Service taxi for Joe
+2024-11-05,Utilities,-30.00,"Internet subscription, November"
+2024-11-05,Health,-18.80,Pharmacy: Teta's pills
+2024-11-06,Generator,-80.00,Generator subscription - November
+2024-11-06,Education,-80.00,"Layla's math tutor, November"
+2024-11-07,Groceries,-6.40,Bakery run
+2024-11-08,Insurance,-85.00,"Family health insurance premium, November"
+2024-11-08,Utilities,-10.00,Mobile top-up for Elias
+2024-11-09,Emergency,-310.00,"Rima's phone stolen from her bag at the market, replacement bought"
+2024-11-09,Other,-5.00,New SIM card and number recovery
+2024-11-10,Salary,90.00,Teta Marta's pension
+2024-11-10,Groceries,-27.60,Weekly shop
+2024-11-11,Utilities,-12.00,Water tanker
+2024-11-12,Remittance,250.00,Tony's transfer from Montreal - November
+2024-11-12,Other,-12.00,Police report stamp for the stolen phone
+2024-11-13,Fuel,-23.00,Petrol
+2024-11-14,Groceries,-31.20,Weekly shop
+2024-11-15,Family support,-60.00,"Aunt Hanan's monthly help, November"
+2024-11-15,Dining,-19.00,"Dinner out, friends consoling Rima"
+2024-11-16,Entertainment,-12.00,Board games night
+2024-11-17,Dining,-21.50,Sunday lunch
+2024-11-18,Clothing,-65.00,"Winter coat for Elias, bought on sale"
+2024-11-20,Utilities,-25.00,EDL electricity bill - November
+2024-11-20,Groceries,-33.40,Weekly shop
+2024-11-21,Fuel,-22.00,Petrol
+2024-11-23,Health,-13.40,Pharmacy: cough and cold
+2024-11-23,Salary,140.00,Evening tutoring
+2024-11-24,Groceries,-6.80,Bakery run
+2024-11-25,Utilities,-8.00,Mobile top-up for Rima
+2024-11-26,Education,-95.00,Joe's project materials
+2024-11-27,Groceries,-29.60,Weekly shop
+2024-11-28,Salary,1000.00,Elias's school salary - November
+2024-11-29,Salary,600.00,"Rima's pharmacy salary, November"
+2024-11-29,Dining,-18.00,Quiet Friday dinner
+2024-11-30,Savings,-40.00,Savings top-up
+2024-12-01,Housing,-300.00,Rent - December
+2024-12-01,Groceries,-34.60,Weekly shop
+2024-12-02,Fuel,-24.00,Petrol
+2024-12-03,Housing,-40.00,Building service charges - December
+2024-12-03,Health,-17.20,Pharmacy: Teta's pills
+2024-12-04,Transport,-55.00,School bus for Layla - December
+2024-12-04,Transport,-8.00,Service taxi for Joe
+2024-12-05,Utilities,-30.00,"Internet subscription, December"
+2024-12-05,Insurance,520.00,Insurance payout for the roundabout accident
+2024-12-06,Generator,-92.00,اشتراك المولّد (مازوت) - December
+2024-12-06,Education,-80.00,"Layla's math tutor, December"
+2024-12-07,Dining,-16.00,Saturday manoushe
+2024-12-08,Insurance,-85.00,"Family health insurance premium, December"
+2024-12-08,Groceries,-6.50,Bakery run
+2024-12-09,Utilities,-12.00,Water tanker
+2024-12-09,Groceries,-5.50,"مناقيش جبنة وزعتر, a cold Monday"
+2024-12-10,Salary,90.00,Teta Marta's pension
+2024-12-10,Utilities,-10.00,Mobile top-up for Elias
+2024-12-11,Groceries,-30.40,Weekly shop
+2024-12-12,Remittance,250.00,Tony's transfer from Montreal - December
+2024-12-12,Other,-25.00,Winter oil for the heater
+2024-12-13,Fuel,-22.00,Petrol
+2024-12-14,Entertainment,-18.00,Christmas market with Layla
+2024-12-15,Family support,-60.00,"Aunt Hanan's monthly help, December"
+2024-12-15,Dining,-20.50,Sunday lunch
+2024-12-16,Groceries,-35.80,Weekly shop plus baking supplies
+2024-12-17,Gifts,-70.00,Presents for the nieces and nephews
+2024-12-18,Health,-11.00,Pharmacy: vitamin C
+2024-12-19,Groceries,-42.00,Christmas ingredients
+2024-12-20,Utilities,-29.00,EDL electricity bill - December
+2024-12-20,Fuel,-21.00,Petrol
+2024-12-21,Groceries,-16.50,Fish for the holiday week
+2024-12-22,Celebrations,-190.00,Christmas Eve at home: smaller table this year
+2024-12-24,Groceries,-22.00,Last bits and sweets
+2024-12-26,Dining,-15.00,Boxing Day coffee with cousins
+2024-12-27,Groceries,-27.00,Weekly shop after the holiday
+2024-12-28,Salary,1000.00,Elias's school salary - December
+2024-12-28,Utilities,-8.00,Mobile top-up for Rima
+2024-12-29,Salary,600.00,"Rima's pharmacy salary, December"
+2024-12-29,Other,-20.00,Bruno's winter coat and booster shot
+2024-12-30,Groceries,-24.00,"New Year's supplies, modest"
+2025-01-01,Housing,-300.00,Rent - January
+2025-01-02,Groceries,-26.00,"Weekly shop, carefully"
+2025-01-03,Housing,-40.00,Building service charges - January
+2025-01-03,Fuel,-18.00,"Petrol, only what we need"
+2025-01-04,Transport,-55.00,School bus for Layla - January
+2025-01-04,Health,-16.00,Pharmacy: Teta's pills
+2025-01-05,Utilities,-30.00,"Internet subscription, January"
+2025-01-05,Transport,-6.00,Service taxi for Joe
+2025-01-06,Generator,-60.00,Generator subscription - January
+2025-01-06,Groceries,-5.00,"Bakery run, one bag"
+2025-01-07,Education,-80.00,"Layla's math tutor, January, paid late with an apology"
+2025-01-08,Insurance,-85.00,"Family health insurance premium, January"
+2025-01-08,Utilities,-6.00,Mobile top-up for Elias
+2025-01-09,Groceries,-19.80,"Weekly shop, lentils and rice"
+2025-01-10,Salary,90.00,Teta Marta's pension
+2025-01-10,Utilities,-12.00,Water tanker
+2025-01-11,Dining,-8.50,"Manoushe at home with a bottle of olive oil, not out"
+2025-01-12,Remittance,250.00,Tony's transfer from Montreal - January
+2025-01-12,Other,-9.00,Haircut for Layla
+2025-01-13,Groceries,-11.40,Fruit and vegetables
+2025-01-14,Fuel,-16.00,Petrol
+2025-01-15,Family support,-60.00,"Aunt Hanan's monthly help, January"
+2025-01-15,Health,-12.50,Pharmacy: syrup for Layla
+2025-01-17,Groceries,-23.60,Weekly shop
+2025-01-18,Other,-10.00,Bruno's food top-up
+2025-01-19,Groceries,-5.40,Bakery run
+2025-01-20,Utilities,-19.00,EDL electricity bill - January
+2025-01-20,Transport,-6.00,Service taxi for Joe
+2025-01-22,Groceries,-20.10,Weekly shop
+2025-01-23,Fuel,-16.00,Petrol
+2025-01-24,Utilities,-6.00,Mobile top-up for Rima
+2025-01-25,Entertainment,-5.00,"Cheap film night at home, popcorn"
+2025-01-27,Groceries,-21.00,Weekly shop
+2025-01-28,Salary,400.00,"Elias's installment salary, the school pays in parts"
+2025-01-29,Salary,600.00,"Rima's pharmacy salary, January"
+2025-01-30,Groceries,-17.00,Stocking up before month end
+2025-02-01,Housing,-300.00,Rent - February
+2025-02-01,Groceries,-28.20,Weekly shop
+2025-02-02,Fuel,-20.00,Petrol
+2025-02-03,Housing,-40.00,Building service charges - February
+2025-02-03,Health,-18.70,Pharmacy: Teta's pills
+2025-02-04,Transport,-55.00,School bus for Layla - February
+2025-02-04,Transport,-7.00,Service taxi for Joe
+2025-02-05,Utilities,-30.00,"Internet subscription, February"
+2025-02-05,Dining,-12.00,Sunday manoushe
+2025-02-06,Generator,-84.00,Generator subscription - February
+2025-02-06,Education,-80.00,"Layla's math tutor, February"
+2025-02-07,Groceries,-5.80,Bakery run
+2025-02-08,Insurance,-85.00,"Family health insurance premium, February"
+2025-02-08,Utilities,-10.00,Mobile top-up for Elias
+2025-02-09,Groceries,-24.60,Weekly shop
+2025-02-10,Salary,90.00,Teta Marta's pension
+2025-02-10,Utilities,-12.00,Water tanker
+2025-02-11,Health,-35.00,"Rima's prenatal checkup, ultrasound"
+2025-02-12,Remittance,250.00,Tony's transfer from Montreal - February
+2025-02-12,Other,-12.00,Haircut for Joe
+2025-02-13,Gifts,-22.00,"Valentine's roses, a small bunch"
+2025-02-14,Dining,-19.00,Valentine's dinner for two
+2025-02-15,Family support,-60.00,"Aunt Hanan's monthly help, February"
+2025-02-16,Groceries,-29.40,Weekly shop
+2025-02-17,Fuel,-20.00,Petrol
+2025-02-18,Health,-28.00,Rima's blood tests
+2025-02-19,Groceries,-6.20,Bakery run
+2025-02-19,Other,-3.00,+ tip for the delivery boy in the rain
+2025-02-20,Utilities,-30.00,EDL electricity bill - February
+2025-02-20,Clothing,-40.00,Maternity clothes
+2025-02-21,Salary,90.00,"Evening tutoring, fewer students this winter"
+2025-02-22,Groceries,-26.00,Weekly shop
+2025-02-23,Fuel,-19.00,Petrol
+2025-02-25,Utilities,-8.00,Mobile top-up for Rima
+2025-02-26,Entertainment,-10.00,"Cinema, Joe and Layla"
+2025-02-27,Education,-70.00,Joe's second semester books
+2025-02-28,Salary,700.00,Elias's school salary - February
+2025-02-28,Salary,600.00,"Rima's pharmacy salary, February"
+2025-02-28,Groceries,-24.80,Weekly shop
+2025-03-01,Housing,-300.00,Rent - March
+2025-03-01,Groceries,-30.60,Weekly shop
+2025-03-02,Fuel,-22.00,Petrol
+2025-03-03,Housing,-40.00,Building service charges - March
+2025-03-03,Health,-40.00,Pediatrician's first consultation before the birth
+2025-03-04,Transport,-55.00,School bus for Layla - March
+2025-03-04,Transport,-8.00,Service taxi for Joe
+2025-03-05,Utilities,-30.00,"Internet subscription, March"
+2025-03-05,Education,-80.00,"Layla's math tutor, March"
+2025-03-06,Generator,-80.00,Generator subscription - March
+2025-03-06,Groceries,-6.00,Bakery run
+2025-03-07,Other,-120.00,"Baby crib and mattress, secondhand but spotless"
+2025-03-08,Insurance,-85.00,"Family health insurance premium, March"
+2025-03-08,Utilities,-10.00,Mobile top-up for Elias
+2025-03-09,Dining,-18.00,Sunday lunch
+2025-03-10,Salary,90.00,Teta Marta's pension
+2025-03-10,Utilities,-12.00,Water tanker
+2025-03-11,Other,-65.00,"Stroller from a friend, repairs and new wheels"
+2025-03-12,Remittance,250.00,Tony's transfer from Montreal - March
+2025-03-13,Health,-35.00,Hospital pre-admission fee
+2025-03-14,Groceries,-31.40,Weekly shop
+2025-03-15,Family support,-60.00,"Aunt Hanan's monthly help, March"
+2025-03-15,Clothing,-80.00,Baby clothes and blankets
+2025-03-16,Fuel,-22.00,Petrol
+2025-03-18,Groceries,-34.00,"Extra shop, visitors expected"
+2025-03-19,Health,-18.50,Pharmacy: baby care essentials
+2025-03-20,Utilities,-27.00,EDL electricity bill - March
+2025-03-20,Remittance,1000.00,"Tony's wire for the hospital, sent the week of the birth"
+2025-03-20,Savings,1200.00,Withdrawn from the cushion for the delivery
+2025-03-21,Fuel,-25.00,"Petrol, hospital run at dawn"
+2025-03-22,Health,-2400.00,"Tala's birth: delivery, three nights and the pediatrician, cash at discharge"
+2025-03-22,Dining,-30.00,Sandwiches and coffee for relatives at the hospital
+2025-03-23,Groceries,-28.00,Fruit and juice for Rima
+2025-03-24,Other,-14.00,"Diapers, first big pack"
+2025-03-25,Utilities,-8.00,Mobile top-up for Rima
+2025-03-26,Groceries,-36.80,"Weekly shop, family visiting"
+2025-03-27,Gifts,-60.00,Thank-you chocolates and sweets for the nurses and visitors
+2025-03-28,Salary,700.00,Elias's school salary - March
+2025-03-28,Health,-24.00,Pharmacy: baby medicine and cream
+2025-03-29,Salary,600.00,"Rima's pharmacy salary, March"
+2025-03-29,Groceries,-8.40,Bakery run
+2025-03-30,Fuel,-23.00,Petrol
+2025-03-31,Other,-45.00,Baby formula and bottles
+2025-04-01,Housing,-300.00,Rent - April
+2025-04-01,Other,-30.00,Diapers and wipes
+2025-04-02,Groceries,-32.20,Weekly shop
+2025-04-03,Housing,-40.00,Building service charges - April
+2025-04-03,Fuel,-22.00,Petrol
+2025-04-04,Transport,-55.00,School bus for Layla - April
+2025-04-04,Health,-20.00,Pharmacy: Teta's pills
+2025-04-05,Utilities,-30.00,"Internet subscription, April"
+2025-04-05,Transport,-8.00,Service taxi for Joe
+2025-04-06,Generator,-72.00,Generator subscription - April
+2025-04-06,Education,-80.00,"Layla's math tutor, April"
+2025-04-07,Groceries,-6.30,Bakery run
+2025-04-08,Insurance,-85.00,"Family health insurance premium, April"
+2025-04-08,Utilities,-10.00,Mobile top-up for Elias
+2025-04-09,Health,-45.00,Tala's vaccination visit
+2025-04-10,Salary,90.00,Teta Marta's pension
+2025-04-10,Utilities,-12.00,Water tanker
+2025-04-11,Groceries,-29.00,Weekly shop
+2025-04-12,Remittance,250.00,Tony's transfer from Montreal - April
+2025-04-12,Dining,-14.00,Sunday brunch with Aunt Hanan
+2025-04-13,Other,-24.00,Diapers
+2025-04-14,Fuel,-23.00,Petrol
+2025-04-15,Family support,-60.00,"Aunt Hanan's monthly help, April"
+2025-04-16,Groceries,-33.60,Weekly shop
+2025-04-17,Celebrations,-90.00,"Easter Thursday dinner, the first with Tala"
+2025-04-18,Groceries,-35.00,Easter shopping
+2025-04-19,Gifts,-40.00,Easter eggs and presents for the family
+2025-04-19,Salary,110.00,Evening tutoring
+2025-04-20,Utilities,-23.00,EDL electricity bill - April
+2025-04-20,Dining,-20.00,Easter Sunday lunch at Hanan's
+2025-04-22,Fuel,-22.00,Petrol
+2025-04-23,Health,-16.00,Pharmacy: baby colic drops
+2025-04-25,Utilities,-8.00,Mobile top-up for Rima
+2025-04-26,Groceries,-31.00,Weekly shop
+2025-04-27,Other,-26.00,Diapers
+2025-04-28,Salary,700.00,Elias's school salary - April
+2025-04-29,Salary,300.00,"Rima's pharmacy salary, April (reduced hours after Tala's birth)"
+2025-04-29,Entertainment,-12.00,"Park with the stroller, a juice"
+2025-04-30,Groceries,-6.50,Bakery run
+2025-05-01,Housing,-300.00,Rent - May
+2025-05-01,Groceries,-30.20,Weekly shop
+2025-05-02,Fuel,-23.00,Petrol
+2025-05-03,Housing,-40.00,Building service charges - May
+2025-05-03,Health,-19.50,Pharmacy: Teta's pills
+2025-05-04,Transport,-55.00,School bus for Layla - May
+2025-05-04,Transport,-8.00,Service taxi for Joe
+2025-05-05,Utilities,-30.00,"Internet subscription, May"
+2025-05-05,Dining,-17.00,Sunday manoushe
+2025-05-06,Generator,-70.00,Generator subscription - May
+2025-05-06,Education,-80.00,"Layla's math tutor, May"
+2025-05-07,Groceries,-6.40,Bakery run
+2025-05-08,Insurance,-85.00,"Family health insurance premium, May"
+2025-05-08,Utilities,-10.00,Mobile top-up for Elias
+2025-05-09,Other,-28.00,Diapers
+2025-05-10,Salary,90.00,Teta Marta's pension
+2025-05-10,Utilities,-12.00,Water tanker
+2025-05-11,Gifts,-45.00,Mother's Day flowers from Joe and Layla
+2025-05-12,Remittance,250.00,Tony's transfer from Montreal - May
+2025-05-12,Groceries,-33.60,Weekly shop
+2025-05-14,Fuel,-22.00,Petrol
+2025-05-15,Family support,-60.00,"Aunt Hanan's monthly help, May"
+2025-05-15,Health,-38.00,Tala's two-month checkup
+2025-05-16,Education,-130.00,Joe's end of semester fees
+2025-05-18,Groceries,-29.40,Weekly shop
+2025-05-19,Clothing,-55.00,Summer clothes for Tala
+2025-05-20,Utilities,-22.00,EDL electricity bill - May
+2025-05-20,Windfall,3500.00,"Windfall: Elias's share of the inherited village plot, sold"
+2025-05-20,Savings,-1500.00,Moved into savings after the windfall
+2025-05-21,Other,-30.00,Notary and paperwork for the land share
+2025-05-22,Fuel,-23.00,Petrol
+2025-05-23,Dining,-38.00,Quiet celebratory dinner for the whole family
+2025-05-25,Utilities,-8.00,Mobile top-up for Rima
+2025-05-26,Groceries,-31.20,Weekly shop
+2025-05-27,Other,-26.00,Diapers
+2025-05-28,Salary,700.00,Elias's school salary - May
+2025-05-29,Salary,300.00,"Rima's pharmacy salary, May (reduced hours after Tala's birth)"
+2025-05-29,Groceries,-7.20,Bakery run
+2025-05-30,Savings,-1000.00,Moved to the savings tin: we felt rich for a week
+2025-05-30,Salary,130.00,"Evening tutoring, exam season"
+2025-05-31,Dining,-16.00,"Café Hamra, crêpe and coffee on the way home"
+2025-06-01,Housing,-300.00,Rent - June
+2025-06-01,Groceries,-32.80,Weekly shop
+2025-06-02,Fuel,-24.00,Petrol
+2025-06-03,Housing,-40.00,Building service charges - June
+2025-06-03,Health,-18.00,Pharmacy: Teta's pills
+2025-06-04,Transport,-55.00,School bus for Layla - June
+2025-06-04,Transport,-8.00,Service taxi for Joe
+2025-06-05,Utilities,-30.00,"Internet subscription, June"
+2025-06-05,Education,-80.00,"Layla's math tutor, June"
+2025-06-06,Generator,-82.00,Generator subscription - June
+2025-06-06,Groceries,-6.60,Bakery run
+2025-06-07,Utilities,-12.00,Water tanker
+2025-06-08,Insurance,-85.00,"Family health insurance premium, June"
+2025-06-08,Utilities,-10.00,Mobile top-up for Elias
+2025-06-09,Dining,-18.50,Sunday lunch
+2025-06-10,Salary,90.00,Teta Marta's pension
+2025-06-10,Clothing,-70.00,"Tala's baptism outfit, white, from Aunt Hanan's seamstress"
+2025-06-11,Groceries,-33.00,Weekly shop
+2025-06-12,Remittance,250.00,Tony's transfer from Montreal - June
+2025-06-12,Other,-40.00,Photographer deposit
+2025-06-13,Fuel,-23.00,Petrol
+2025-06-14,Gifts,-50.00,Godmother's and godfather's gifts
+2025-06-15,Family support,-60.00,"Aunt Hanan's monthly help, June"
+2025-06-15,Celebrations,-650.00,"Tala's baptism: church offering, lunch for forty, cake and photographs"
+2025-06-16,Dining,-22.00,Sunday lunch with leftovers
+2025-06-17,Groceries,-28.80,Weekly shop
+2025-06-18,Other,-25.00,Diapers
+2025-06-19,Health,-14.00,Pharmacy: baby cream
+2025-06-20,Utilities,-28.00,EDL electricity bill - June
+2025-06-21,Fuel,-22.00,Petrol
+2025-06-22,Entertainment,-18.00,Swimming pool for the kids
+2025-06-24,Groceries,-31.60,Weekly shop
+2025-06-25,Utilities,-8.00,Mobile top-up for Rima
+2025-06-26,Education,-95.00,Layla's end-of-year exam fees
+2025-06-28,Salary,700.00,Elias's school salary - June
+2025-06-28,Groceries,-8.30,Bakery run
+2025-06-29,Salary,300.00,"Rima's pharmacy salary, June (reduced hours after Tala's birth)"
+2025-06-29,Savings,-120.00,Back to saving: a little each month
+2025-06-30,Dining,-24.00,Saturday dinner
+2025-06-30,Education,-20.00,"Layla's tutor says: ""she is ready"" for the exams"
+2025-07-01,Housing,-300.00,Rent - July
+2025-07-01,Groceries,-33.20,Weekly shop
+2025-07-02,Fuel,-24.00,Petrol
+2025-07-03,Housing,-40.00,Building service charges - July
+2025-07-03,Health,-19.40,Pharmacy: Teta's pills
+2025-07-04,Transport,-8.00,Service taxi for Joe
+2025-07-05,Utilities,-30.00,"Internet subscription, July"
+2025-07-05,Education,-80.00,"Layla's math tutor, July"
+2025-07-06,Generator,-98.00,Generator subscription - July
+2025-07-06,Dining,-17.50,Sunday manoushe
+2025-07-07,Groceries,-6.40,Bakery run
+2025-07-08,Insurance,-85.00,"Family health insurance premium, July"
+2025-07-08,Utilities,-10.00,Mobile top-up for Elias
+2025-07-09,Utilities,-12.00,Water tanker
+2025-07-10,Salary,90.00,Teta Marta's pension
+2025-07-10,Other,-24.00,Diapers
+2025-07-11,Groceries,-30.00,Weekly shop
+2025-07-12,Remittance,250.00,Tony's transfer from Montreal - July
+2025-07-12,Insurance,-190.00,"Car insurance, quarterly"
+2025-07-13,Fuel,-23.00,Petrol
+2025-07-14,Health,-42.00,Tala's four-month checkup
+2025-07-15,Family support,-60.00,"Aunt Hanan's monthly help, July"
+2025-07-16,Groceries,-35.60,Weekly shop
+2025-07-17,Entertainment,-15.00,Evening drive and ice cream
+2025-07-18,Clothing,-48.00,Summer sandals for Layla
+2025-07-19,Fuel,-24.00,Petrol
+2025-07-20,Utilities,-35.00,EDL electricity bill - July
+2025-07-21,Dining,-26.00,Saturday lunch with Rima's colleagues
+2025-07-23,Groceries,-31.20,Weekly shop
+2025-07-24,Utilities,-8.00,Mobile top-up for Rima
+2025-07-25,Other,-28.00,Diapers
+2025-07-26,Groceries,-7.60,Bakery run
+2025-07-28,Salary,700.00,Elias's school salary - July
+2025-07-28,Fuel,-23.00,Petrol
+2025-07-29,Salary,600.00,"Rima's pharmacy salary, July"
+2025-07-30,Groceries,-30.40,Weekly shop
+2025-07-31,Savings,-100.00,Savings top-up
+2025-08-01,Housing,-300.00,Rent - August
+2025-08-01,Groceries,-40.00,Supplies for the Cedars weekend
+2025-08-02,Travel,-540.00,"Weekend in the Cedars: guesthouse, cable car, fuel and mountain lunches"
+2025-08-02,Fuel,-32.00,"Petrol, up to the mountains"
+2025-08-03,Housing,-40.00,Building service charges - August
+2025-08-03,Dining,-34.00,Lunch at the village inn on the way back
+2025-08-04,Groceries,-8.20,Bakery run
+2025-08-05,Utilities,-30.00,"Internet subscription, August"
+2025-08-05,Education,-80.00,"Layla's math tutor, August"
+2025-08-06,Generator,-102.00,Generator subscription - August
+2025-08-06,Utilities,-12.00,Water tanker
+2025-08-07,Utilities,-10.00,Mobile top-up for Elias
+2025-08-08,Insurance,-85.00,"Family health insurance premium, August"
+2025-08-08,Health,-16.00,Pharmacy: Teta's pills
+2025-08-09,Groceries,-31.80,Weekly shop
+2025-08-10,Salary,90.00,Teta Marta's pension
+2025-08-10,Dining,-18.00,Sunday manoushe
+2025-08-11,Other,-26.00,Diapers
+2025-08-12,Remittance,250.00,Tony's transfer from Montreal - August
+2025-08-12,Fuel,-22.00,Petrol
+2025-08-14,Groceries,-12.00,Fruit and watermelons
+2025-08-15,Family support,-60.00,"Aunt Hanan's monthly help, August"
+2025-08-15,Celebrations,-50.00,August 15th feast lunch contribution
+2025-08-16,Groceries,-32.00,Weekly shop
+2025-08-17,Clothing,-60.00,Back-to-school shoes for Layla
+2025-08-18,Fuel,-23.00,Petrol
+2025-08-20,Utilities,-38.00,EDL electricity bill - August
+2025-08-20,Health,-22.00,"Tala's cold, a pharmacy visit"
+2025-08-22,Groceries,-30.60,Weekly shop
+2025-08-24,Utilities,-8.00,Mobile top-up for Rima
+2025-08-25,Other,-1.50,=change left for the street musician on the corner
+2025-08-26,Education,-45.00,Notebooks and a school bag
+2025-08-27,Groceries,-6.80,Bakery run
+2025-08-28,Salary,700.00,Elias's school salary - August
+2025-08-29,Salary,600.00,"Rima's pharmacy salary, August"
+2025-08-29,Fuel,-23.00,Petrol
+2025-08-30,Groceries,-30.00,Weekly shop
+2025-09-01,Housing,-300.00,Rent - September
+2025-09-01,Education,-300.00,"Joe's third-year fees, first installment"
+2025-09-02,Groceries,-34.40,Weekly shop
+2025-09-03,Housing,-40.00,Building service charges - September
+2025-09-03,Fuel,-24.00,Petrol
+2025-09-04,Transport,-55.00,School bus for Layla - September
+2025-09-04,Health,-17.50,Pharmacy: Teta's pills
+2025-09-05,Utilities,-30.00,"Internet subscription, September"
+2025-09-05,Education,-720.00,"Layla's school fees, uniforms and books"
+2025-09-06,Generator,-86.00,Generator subscription - September
+2025-09-06,Dining,-18.00,Saturday manoushe
+2025-09-07,Groceries,-6.50,Bakery run
+2025-09-08,Insurance,-85.00,"Family health insurance premium, September"
+2025-09-08,Transport,-8.00,Service taxi for Joe
+2025-09-09,Utilities,-12.00,Water tanker
+2025-09-10,Salary,90.00,Teta Marta's pension
+2025-09-10,Education,-80.00,"Layla's math tutor, September"
+2025-09-11,Utilities,-10.00,Mobile top-up for Elias
+2025-09-12,Remittance,250.00,Tony's transfer from Montreal - September
+2025-09-12,Groceries,-31.00,Weekly shop
+2025-09-13,Fuel,-23.00,Petrol
+2025-09-14,Dining,-22.50,Sunday lunch
+2025-09-15,Family support,-60.00,"Aunt Hanan's monthly help, September"
+2025-09-16,Other,-30.00,Diapers and wipes
+2025-09-17,Groceries,-35.00,Weekly shop
+2025-09-19,Health,-45.00,Tala's nine-month checkup
+2025-09-20,Utilities,-30.00,EDL electricity bill - September
+2025-09-20,Fuel,-22.00,Petrol
+2025-09-22,Groceries,-28.40,Weekly shop
+2025-09-24,Utilities,-8.00,Mobile top-up for Rima
+2025-09-25,Entertainment,-14.00,"Cinema, Joe and Layla"
+2025-09-27,Groceries,-7.20,Bakery run
+2025-09-28,Salary,800.00,Elias's school salary - September
+2025-09-28,Savings,-80.00,Savings top-up
+2025-09-29,Salary,600.00,"Rima's pharmacy salary, September"
+2025-09-30,Groceries,-29.80,Weekly shop
+2025-10-01,Housing,-300.00,Rent - October
+2025-10-01,Groceries,-33.80,Weekly shop
+2025-10-02,Fuel,-24.00,Petrol
+2025-10-03,Housing,-40.00,Building service charges - October
+2025-10-03,Health,-18.20,Pharmacy: Teta's pills
+2025-10-04,Transport,-55.00,School bus for Layla - October
+2025-10-04,Dining,-18.00,Saturday manoushe
+2025-10-05,Utilities,-30.00,"Internet subscription, October"
+2025-10-05,Education,-300.00,"Joe's third-year fees, second installment"
+2025-10-06,Generator,-84.00,Generator subscription - October
+2025-10-06,Groceries,-6.60,Bakery run
+2025-10-07,Transport,-8.00,Service taxi for Joe
+2025-10-08,Insurance,-85.00,"Family health insurance premium, October"
+2025-10-08,Utilities,-12.00,Water tanker
+2025-10-09,Education,-80.00,"Layla's math tutor, October"
+2025-10-10,Salary,90.00,Teta Marta's pension
+2025-10-10,Utilities,-10.00,Mobile top-up for Elias
+2025-10-11,Family support,-400.00,"Sent to Samir, Rima's brother, to cover his shop-less rent"
+2025-10-12,Remittance,250.00,Tony's transfer from Montreal - October
+2025-10-12,Groceries,-30.60,Weekly shop
+2025-10-13,Other,-26.00,Diapers
+2025-10-14,Fuel,-23.00,Petrol
+2025-10-15,Family support,-60.00,"Aunt Hanan's monthly help, October"
+2025-10-15,Dining,-21.00,"Sunday lunch, quiet"
+2025-10-17,Groceries,-32.00,Weekly shop
+2025-10-18,Entertainment,-12.00,Park and swings with Tala
+2025-10-19,Other,-18.00,Bruno's flea treatment
+2025-10-20,Utilities,-26.00,EDL electricity bill - October
+2025-10-20,Fuel,-22.00,Petrol
+2025-10-22,Groceries,-29.00,Weekly shop
+2025-10-23,Clothing,-42.00,Tala's warm pajamas
+2025-10-24,Salary,150.00,Evening tutoring
+2025-10-25,Utilities,-8.00,Mobile top-up for Rima
+2025-10-27,Groceries,-7.40,Bakery run
+2025-10-28,Salary,800.00,Elias's school salary - October
+2025-10-28,Savings,-60.00,Savings top-up
+2025-10-29,Salary,600.00,"Rima's pharmacy salary, October"
+2025-10-31,Groceries,-31.40,Weekly shop
+2025-11-01,Housing,-300.00,Rent - November
+2025-11-01,Groceries,-30.80,Weekly shop
+2025-11-02,Dining,-17.00,Sunday manoushe
+2025-11-03,Housing,-40.00,Building service charges - November
+2025-11-03,Fuel,-24.00,Petrol
+2025-11-04,Transport,-55.00,School bus for Layla - November
+2025-11-04,Health,-19.90,Pharmacy: Teta's pills and cough syrup
+2025-11-05,Utilities,-30.00,"Internet subscription, November"
+2025-11-05,Transport,-8.00,Service taxi for Joe
+2025-11-06,Generator,-86.00,Generator subscription - November
+2025-11-06,Education,-80.00,"Layla's math tutor, November"
+2025-11-07,Groceries,-6.20,Bakery run
+2025-11-08,Insurance,-85.00,"Family health insurance premium, November"
+2025-11-08,Utilities,-12.00,Water tanker
+2025-11-09,Utilities,-10.00,Mobile top-up for Elias
+2025-11-10,Salary,90.00,Teta Marta's pension
+2025-11-10,Groceries,-28.60,Weekly shop
+2025-11-11,Health,-16.00,Doctor's home visit for Teta's cough
+2025-11-12,Remittance,250.00,Tony's transfer from Montreal - November
+2025-11-13,Health,-60.00,Tests and chest X-ray for Teta
+2025-11-14,Health,-1600.00,"Teta Marta's hospital stay: eight days, pneumonia treatment and tests"
+2025-11-14,Fuel,-30.00,"Petrol, daily hospital runs"
+2025-11-15,Family support,-60.00,"Aunt Hanan's monthly help, November"
+2025-11-15,Dining,-28.00,"Hospital cafeteria meals, a week of them"
+2025-11-16,Other,-20.00,Parking fees at the hospital
+2025-11-18,Groceries,-22.00,"Shop, only essentials"
+2025-11-19,Health,-48.00,Pharmacy: antibiotics and nebulizer drops
+2025-11-20,Utilities,-27.00,EDL electricity bill - November
+2025-11-21,Fuel,-26.00,Petrol
+2025-11-22,Remittance,600.00,Tony's extra transfer for Teta's hospital bill
+2025-11-23,Groceries,-33.20,Weekly shop
+2025-11-24,Dining,-20.00,"Dinner out, Teta is home"
+2025-11-26,Utilities,-8.00,Mobile top-up for Rima
+2025-11-27,Other,-26.00,Diapers
+2025-11-28,Salary,800.00,Elias's school salary - November
+2025-11-29,Salary,600.00,"Rima's pharmacy salary, November"
+2025-11-29,Groceries,-6.50,Bakery run
+2025-11-30,Savings,-50.00,Savings top-up
+2025-12-01,Housing,-300.00,Rent - December
+2025-12-01,Groceries,-32.40,Weekly shop
+2025-12-02,Fuel,-24.00,Petrol
+2025-12-02,Other,-6.50,Candle and holy water\nfor Teta's saint's day
+2025-12-03,Housing,-40.00,Building service charges - December
+2025-12-03,Health,-21.60,Pharmacy: Teta's pills
+2025-12-04,Transport,-55.00,School bus for Layla - December
+2025-12-04,Transport,-8.00,Service taxi for Joe
+2025-12-05,Utilities,-30.00,"Internet subscription, December"
+2025-12-05,Education,-80.00,"Layla's math tutor, December"
+2025-12-06,Generator,-95.00,Generator subscription - December
+2025-12-06,Dining,-16.00,Saturday manoushe
+2025-12-07,Groceries,-6.40,Bakery run
+2025-12-08,Insurance,-85.00,"Family health insurance premium, December"
+2025-12-08,Utilities,-12.00,Water tanker
+2025-12-09,Utilities,-10.00,Mobile top-up for Elias
+2025-12-10,Salary,90.00,Teta Marta's pension
+2025-12-10,Groceries,-31.60,Weekly shop
+2025-12-11,Other,-28.00,"Winter oil for the heater, extra for Teta"
+2025-12-12,Remittance,250.00,Tony's transfer from Montreal - December
+2025-12-12,Health,-28.00,Doctor's follow-up visit for Teta
+2025-12-13,Fuel,-22.00,Petrol
+2025-12-13,Salary,160.00,Evening tutoring
+2025-12-14,Entertainment,-20.00,Christmas market with Tala in the stroller
+2025-12-15,Family support,-60.00,"Aunt Hanan's monthly help, December"
+2025-12-15,Dining,-22.00,Sunday lunch
+2025-12-16,Groceries,-37.60,Weekly shop plus ma'amoul supplies
+2025-12-17,Gifts,-65.00,Presents for the family
+2025-12-18,Groceries,-45.00,Christmas ingredients
+2025-12-19,Health,-12.00,Pharmacy: Layla's cold
+2025-12-20,Utilities,-31.00,EDL electricity bill - December
+2025-12-20,Fuel,-22.00,Petrol
+2025-12-21,Groceries,-16.00,Fish for the holiday week
+2025-12-24,Celebrations,-260.00,Christmas Eve with Teta at the head of the table
+2025-12-26,Dining,-18.00,Boxing Day coffee
+2025-12-27,Groceries,-26.00,Weekly shop
+2025-12-28,Salary,800.00,Elias's school salary - December
+2025-12-28,Utilities,-8.00,Mobile top-up for Rima
+2025-12-29,Salary,600.00,"Rima's pharmacy salary, December"
+2025-12-30,Groceries,-27.00,New Year's supplies
+2025-12-31,Savings,-100.00,"Savings top-up, end of year"
+2026-01-01,Housing,-300.00,Rent - January
+2026-01-02,Groceries,-30.00,Weekly shop
+2026-01-03,Housing,-40.00,Building service charges - January
+2026-01-03,Fuel,-23.00,Petrol
+2026-01-04,Transport,-55.00,School bus for Layla - January
+2026-01-04,Health,-25.00,Pharmacy: Teta's oxygen supplies
+2026-01-05,Utilities,-30.00,"Internet subscription, January"
+2026-01-05,Transport,-8.00,Service taxi for Joe
+2026-01-06,Generator,-98.00,Generator subscription - January
+2026-01-06,Education,-80.00,"Layla's math tutor, January"
+2026-01-07,Groceries,-6.20,Bakery run
+2026-01-08,Insurance,-85.00,"Family health insurance premium, January"
+2026-01-08,Utilities,-12.00,Water tanker during the cold wave
+2026-01-09,Utilities,-10.00,Mobile top-up for Elias
+2026-01-10,Salary,90.00,Teta Marta's pension
+2026-01-10,Groceries,-28.40,Weekly shop
+2026-01-12,Remittance,250.00,Tony's transfer from Montreal - January
+2026-01-12,Health,-30.00,Doctor's visit for Teta
+2026-01-14,Fuel,-24.00,Petrol
+2026-01-15,Family support,-60.00,"Aunt Hanan's monthly help, January"
+2026-01-15,Other,-22.00,Diesel for the heater
+2026-01-16,Groceries,-24.00,"Light shop, Teta ate little"
+2026-01-18,Health,-40.00,Night doctor visit: Teta's last night
+2026-01-19,Funeral,-60.00,Death notices in the newspaper and parish card printing
+2026-01-20,Utilities,-34.00,EDL electricity bill - January
+2026-01-20,Funeral,-1250.00,"Teta Marta's funeral: church, flowers, reception and the meal for mourners"
+2026-01-20,Dining,-45.00,Coffee and water for the mourners at home
+2026-01-21,Groceries,-48.00,Food for the visitors for the three days
+2026-01-22,Groceries,-26.00,Weekly shop
+2026-01-23,Fuel,-26.00,Petrol
+2026-01-24,Utilities,-8.00,Mobile top-up for Rima
+2026-01-25,Gifts,-30.00,Thank-you offering to the church choir
+2026-01-27,Groceries,-6.50,Bakery run
+2026-01-28,Salary,800.00,Elias's school salary - January
+2026-01-28,Savings,-60.00,Savings top-up
+2026-01-29,Salary,600.00,"Rima's pharmacy salary, January"
+2026-01-30,Groceries,-29.00,Weekly shop
+2026-02-01,Housing,-300.00,Rent - February
+2026-02-01,Groceries,-28.20,Weekly shop
+2026-02-02,Fuel,-22.00,Petrol
+2026-02-03,Housing,-40.00,Building service charges - February
+2026-02-03,Health,-18.00,Pharmacy: Rima's headaches
+2026-02-04,Transport,-55.00,School bus for Layla - February
+2026-02-04,Transport,-8.00,Service taxi for Joe
+2026-02-05,Utilities,-30.00,"Internet subscription, February"
+2026-02-05,Education,-80.00,"Layla's math tutor, February"
+2026-02-06,Generator,-90.00,Generator subscription - February
+2026-02-06,Dining,-15.00,Friday manoushe
+2026-02-07,Groceries,-6.00,Bakery run
+2026-02-08,Insurance,-85.00,"Family health insurance premium, February"
+2026-02-08,Utilities,-12.00,Water tanker
+2026-02-09,Utilities,-10.00,Mobile top-up for Elias
+2026-02-10,Groceries,-29.60,Weekly shop
+2026-02-11,Other,-20.00,"Mass for Teta's memorial, the 40 days"
+2026-02-12,Remittance,250.00,Tony's transfer from Montreal - February
+2026-02-13,Fuel,-23.00,Petrol
+2026-02-14,Dining,-24.00,"Valentine's lunch out, Elias and Rima"
+2026-02-15,Family support,-60.00,"Aunt Hanan's monthly help, February"
+2026-02-15,Dining,-16.00,Sunday brunch
+2026-02-16,Groceries,-30.00,Weekly shop
+2026-02-17,Health,-14.50,Pharmacy: baby vitamins
+2026-02-18,Entertainment,-12.00,"Cinema, Joe and Layla"
+2026-02-19,Clothing,-50.00,Tala's growing shoes
+2026-02-20,Utilities,-32.00,EDL electricity bill - February
+2026-02-20,Salary,140.00,Evening tutoring
+2026-02-21,Groceries,-27.80,Weekly shop
+2026-02-23,Fuel,-22.00,Petrol
+2026-02-24,Utilities,-8.00,Mobile top-up for Rima
+2026-02-25,Other,-26.00,Diapers
+2026-02-26,Groceries,-6.30,Bakery run
+2026-02-28,Salary,800.00,Elias's school salary - February
+2026-02-28,Salary,600.00,"Rima's pharmacy salary, February"
+2026-02-28,Savings,-50.00,Savings top-up
+2026-02-28,Other,-7.00,"Teta's rosary beads repaired, ""for the family"""
+2026-03-01,Housing,-300.00,Rent - March
+2026-03-01,Groceries,-32.00,Weekly shop
+2026-03-02,Fuel,-23.00,Petrol
+2026-03-03,Housing,-40.00,Building service charges - March
+2026-03-03,Health,-20.50,Pharmacy: Rima's vitamins
+2026-03-04,Transport,-55.00,School bus for Layla - March
+2026-03-04,Transport,-8.00,Service taxi for Joe
+2026-03-05,Utilities,-30.00,"Internet subscription, March"
+2026-03-05,Education,-80.00,"Layla's math tutor, March"
+2026-03-06,Generator,-80.00,Generator subscription - March
+2026-03-06,Groceries,-6.60,Bakery run
+2026-03-07,Dining,-17.00,Saturday manoushe
+2026-03-08,Insurance,-85.00,"Family health insurance premium, March"
+2026-03-08,Utilities,-12.00,Water tanker
+2026-03-09,Utilities,-10.00,Mobile top-up for Elias
+2026-03-10,Other,-60.00,Solar company's site survey and quote
+2026-03-11,Groceries,-30.40,Weekly shop
+2026-03-12,Remittance,250.00,Tony's transfer from Montreal - March
+2026-03-12,Groceries,-18.00,"@Abou Joe's grocery: the monthly tab, settled"
+2026-03-13,Fuel,-22.00,Petrol
+2026-03-14,Dining,-21.00,Sunday lunch
+2026-03-15,Family support,-60.00,"Aunt Hanan's monthly help, March"
+2026-03-15,Entertainment,-14.00,Park with Tala
+2026-03-16,Groceries,-33.60,Weekly shop
+2026-03-18,Education,-120.00,Joe's project and printing costs
+2026-03-19,Groceries,-12.00,Fruit and vegetables
+2026-03-20,Utilities,-28.00,EDL electricity bill - March
+2026-03-20,Fuel,-23.00,Petrol
+2026-03-22,Groceries,-29.00,Weekly shop
+2026-03-24,Utilities,-8.00,Mobile top-up for Rima
+2026-03-25,Other,-24.00,Diapers
+2026-03-27,Groceries,-6.80,Bakery run
+2026-03-28,Salary,800.00,Elias's school salary - March
+2026-03-28,Savings,-80.00,Savings top-up
+2026-03-29,Salary,600.00,"Rima's pharmacy salary, March"
+2026-03-30,Groceries,-31.00,Weekly shop
+2026-04-01,Housing,-300.00,Rent - April
+2026-04-01,Groceries,-33.00,Weekly shop
+2026-04-02,Fuel,-24.00,Petrol
+2026-04-03,Housing,-40.00,Building service charges - April
+2026-04-03,Health,-19.00,Pharmacy: allergy tablets
+2026-04-04,Transport,-55.00,School bus for Layla - April
+2026-04-04,Dining,-17.50,Saturday manoushe
+2026-04-05,Utilities,-30.00,"Internet subscription, April"
+2026-04-05,Education,-80.00,"Layla's math tutor, April"
+2026-04-06,Generator,-45.00,Generator subscription - April
+2026-04-06,Groceries,-6.40,Bakery run
+2026-04-07,Transport,-8.00,Service taxi for Joe
+2026-04-08,Insurance,-85.00,"Family health insurance premium, April"
+2026-04-08,Utilities,-12.00,Water tanker
+2026-04-09,Utilities,-10.00,Mobile top-up for Elias
+2026-04-10,Savings,2500.00,Withdrawn from savings for the solar system
+2026-04-11,Other,-45.00,Electrician's deposit and cabling
+2026-04-12,Remittance,250.00,Tony's transfer from Montreal - April
+2026-04-12,Housing,-3800.00,"Solar system with battery installed, the end of the generator"
+2026-04-13,Groceries,-30.60,Weekly shop
+2026-04-14,Other,-12.00,"Solar installers' lunch, falafel for six, with extra pickles"
+2026-04-15,Family support,-60.00,"Aunt Hanan's monthly help, April"
+2026-04-15,Fuel,-22.00,Petrol
+2026-04-16,Dining,-26.00,Lunch to celebrate no more noise on the balcony
+2026-04-17,Groceries,-8.20,Fruit and vegetables
+2026-04-19,Celebrations,-110.00,"Easter lunch, hosted at home"
+2026-04-20,Utilities,-20.00,EDL electricity bill - April
+2026-04-20,Groceries,-36.00,Easter shopping
+2026-04-21,Gifts,-40.00,Easter eggs for the nieces
+2026-04-22,Fuel,-23.00,Petrol
+2026-04-23,Salary,170.00,"Evening tutoring, two new students"
+2026-04-24,Utilities,-8.00,Mobile top-up for Rima
+2026-04-26,Groceries,-28.40,Weekly shop
+2026-04-27,Other,-24.00,Diapers
+2026-04-28,Salary,800.00,Elias's school salary - April
+2026-04-29,Salary,600.00,"Rima's pharmacy salary, April"
+2026-04-29,Groceries,-6.50,Bakery run
+2026-04-30,Savings,-50.00,Savings top-up
+2026-05-01,Housing,-300.00,Rent - May
+2026-05-01,Groceries,-31.60,Weekly shop
+2026-05-02,Fuel,-24.00,Petrol
+2026-05-03,Housing,-40.00,Building service charges - May
+2026-05-03,Dining,-18.00,Sunday manoushe
+2026-05-04,Transport,-55.00,School bus for Layla - May
+2026-05-04,Health,-17.80,Pharmacy: Rima's pills
+2026-05-05,Utilities,-30.00,"Internet subscription, May"
+2026-05-05,Education,-80.00,"Layla's math tutor, May"
+2026-05-06,Generator,-28.00,Generator subscription - May
+2026-05-06,Groceries,-6.20,Bakery run
+2026-05-07,Transport,-8.00,Service taxi for Joe
+2026-05-08,Insurance,-85.00,"Family health insurance premium, May"
+2026-05-08,Utilities,-12.00,Water tanker
+2026-05-09,Utilities,-10.00,Mobile top-up for Elias
+2026-05-10,Gifts,-45.00,Mother's Day flowers
+2026-05-12,Remittance,250.00,Tony's transfer from Montreal - May
+2026-05-12,Groceries,-30.00,Weekly shop
+2026-05-14,Fuel,-22.00,Petrol
+2026-05-15,Family support,-60.00,"Aunt Hanan's monthly help, May"
+2026-05-15,Education,-130.00,Joe's final semester fees
+2026-05-17,Dining,-22.00,Sunday lunch
+2026-05-18,Groceries,-33.20,Weekly shop
+2026-05-19,Entertainment,-15.00,"Cinema, Joe and Layla"
+2026-05-20,Utilities,-12.00,EDL electricity bill - May
+2026-05-20,Fuel,-23.00,Petrol
+2026-05-22,Clothing,-55.00,Summer outfits for Tala
+2026-05-24,Groceries,-29.40,Weekly shop
+2026-05-25,Utilities,-8.00,Mobile top-up for Rima
+2026-05-27,Other,-26.00,Diapers
+2026-05-28,Salary,1000.00,Elias's school salary - May
+2026-05-29,Salary,600.00,"Rima's pharmacy salary, May"
+2026-05-29,Groceries,-7.00,Bakery run
+2026-05-30,Savings,-100.00,Savings top-up
+2026-06-01,Housing,-300.00,Rent - June
+2026-06-01,Groceries,-32.40,Weekly shop
+2026-06-02,Fuel,-24.00,Petrol
+2026-06-03,Housing,-40.00,Building service charges - June
+2026-06-03,Health,-18.60,Pharmacy: sunscreen and baby cream
+2026-06-04,Transport,-55.00,School bus for Layla - June
+2026-06-04,Education,-80.00,"Layla's math tutor, June"
+2026-06-05,Utilities,-30.00,"Internet subscription, June"
+2026-06-05,Dining,-17.00,Friday manoushe
+2026-06-06,Generator,-25.00,Generator subscription - June
+2026-06-06,Groceries,-6.50,Bakery run
+2026-06-07,Utilities,-12.00,Water tanker
+2026-06-08,Insurance,-85.00,"Family health insurance premium, June"
+2026-06-08,Utilities,-10.00,Mobile top-up for Elias
+2026-06-09,Transport,-8.00,Service taxi for Joe
+2026-06-10,Groceries,-31.00,Weekly shop
+2026-06-11,Clothing,-95.00,Joe's graduation suit and shirt
+2026-06-12,Remittance,250.00,Tony's transfer from Montreal - June
+2026-06-12,Salary,150.00,Evening tutoring
+2026-06-13,Fuel,-22.00,Petrol
+2026-06-14,Dining,-23.00,Sunday lunch
+2026-06-15,Family support,-60.00,"Aunt Hanan's monthly help, June"
+2026-06-15,Education,-95.00,Layla's end-of-year exam fees
+2026-06-16,Groceries,-30.20,Weekly shop
+2026-06-18,Entertainment,-16.00,Swimming pool for the kids
+2026-06-20,Utilities,-14.00,EDL electricity bill - June
+2026-06-20,Fuel,-23.00,Petrol
+2026-06-22,Groceries,-34.60,Weekly shop plus graduation snacks
+2026-06-24,Other,-40.00,Graduation gown rental and photographer deposit
+2026-06-25,Utilities,-8.00,Mobile top-up for Rima
+2026-06-26,Groceries,-18.00,Cake and drinks for the party
+2026-06-27,Celebrations,-350.00,"Joe's graduation: ceremony, photographer and family dinner"
+2026-06-28,Salary,1000.00,Elias's school salary - June
+2026-06-28,Gifts,-40.00,"Graduation gift pooled for Joe from relatives, our share"
+2026-06-29,Salary,600.00,"Rima's pharmacy salary, June"
+2026-06-29,Savings,-100.00,Savings top-up
+2026-07-01,Housing,-300.00,Rent - July
+2026-07-01,Groceries,-33.00,Weekly shop
+2026-07-02,Fuel,-24.00,Petrol
+2026-07-03,Housing,-40.00,Building service charges - July
+2026-07-03,Health,-19.00,Pharmacy: Rima's pills
+2026-07-04,Transport,-8.00,"Service taxi for Joe, job interviews"
+2026-07-05,Utilities,-30.00,"Internet subscription, July"
+2026-07-05,Education,-80.00,"Layla's math tutor, July"
+2026-07-06,Generator,-30.00,Generator subscription - July
+2026-07-06,Dining,-17.50,Monday manoushe
+2026-07-07,Groceries,-6.40,Bakery run
+2026-07-08,Insurance,-85.00,"Family health insurance premium, July"
+2026-07-08,Utilities,-12.00,Water tanker
+2026-07-09,Utilities,-10.00,Mobile top-up for Elias
+2026-07-10,Other,-26.00,Diapers
+2026-07-11,Groceries,-30.60,Weekly shop
+2026-07-12,Remittance,250.00,Tony's transfer from Montreal - July
+2026-07-12,Insurance,-190.00,"Car insurance, quarterly"
+2026-07-13,Fuel,-23.00,Petrol
+2026-07-14,Dining,-24.00,Sunday lunch
+2026-07-15,Family support,-60.00,"Aunt Hanan's monthly help, July"
+2026-07-16,Groceries,-31.80,Weekly shop
+2026-07-17,Clothing,-60.00,Joe's interview shirts and shoes
+2026-07-18,Fuel,-24.00,Petrol
+2026-07-20,Utilities,-18.00,EDL electricity bill - July
+2026-07-20,Entertainment,-15.00,Evening drive and ice cream
+2026-07-22,Groceries,-29.40,Weekly shop
+2026-07-24,Utilities,-8.00,Mobile top-up for Rima
+2026-07-26,Health,-42.00,"Tala's checkup, nearly two years"
+2026-07-27,Groceries,-7.20,Bakery run
+2026-07-28,Salary,1000.00,Elias's school salary - July
+2026-07-29,Salary,600.00,"Rima's pharmacy salary, July"
+2026-07-29,Fuel,-23.00,Petrol
+2026-07-30,Savings,-100.00,Savings top-up
+2026-08-01,Housing,-300.00,Rent - August
+2026-08-01,Groceries,-34.20,Weekly shop
+2026-08-02,Fuel,-24.00,Petrol
+2026-08-03,Housing,-40.00,Building service charges - August
+2026-08-03,Health,-16.40,Pharmacy: Rima's pills
+2026-08-04,Education,-80.00,"Layla's math tutor, August"
+2026-08-05,Utilities,-30.00,"Internet subscription, August"
+2026-08-05,Dining,-18.50,Wednesday manoushe
+2026-08-06,Generator,-30.00,Generator subscription - August
+2026-08-06,Utilities,-12.00,Water tanker
+2026-08-07,Groceries,-6.60,Bakery run
+2026-08-08,Insurance,-85.00,"Family health insurance premium, August"
+2026-08-08,Utilities,-10.00,Mobile top-up for Elias
+2026-08-09,Dining,-35.00,Sunday lunch to celebrate Joe's job offer
+2026-08-10,Groceries,-30.80,Weekly shop
+2026-08-12,Remittance,250.00,Tony's transfer from Montreal - August
+2026-08-12,Other,-26.00,Diapers
+2026-08-13,Fuel,-23.00,Petrol
+2026-08-15,Family support,-60.00,"Aunt Hanan's monthly help, August"
+2026-08-15,Celebrations,-60.00,August 15th feast lunch contribution
+2026-08-16,Groceries,-31.40,Weekly shop
+2026-08-18,Clothing,-65.00,Back-to-school shoes for Layla
+2026-08-20,Utilities,-19.00,EDL electricity bill - August
+2026-08-20,Fuel,-22.00,Petrol
+2026-08-22,Groceries,-33.00,Weekly shop
+2026-08-24,Utilities,-8.00,Mobile top-up for Rima
+2026-08-25,Education,-50.00,Notebooks and a school bag for Layla
+2026-08-27,Groceries,-7.30,Bakery run
+2026-08-28,Salary,1000.00,Elias's school salary - August
+2026-08-28,Salary,480.00,"Joe's first salary, at the engineering firm"
+2026-08-29,Salary,600.00,"Rima's pharmacy salary, August"
+2026-08-29,Gifts,-30.00,"Joe treats the family, and we bring a thank-you cake"
+2026-08-30,Savings,-150.00,"Savings top-up, the cushion starts to refill"
+2026-09-01,Housing,-300.00,Rent - September
+2026-09-01,Education,-780.00,"Layla's school fees, uniforms and books"
+2026-09-02,Groceries,-32.60,Weekly shop
+2026-09-03,Housing,-40.00,Building service charges - September
+2026-09-03,Fuel,-24.00,Petrol
+2026-09-04,Transport,-55.00,School bus for Layla - September
+2026-09-04,Health,-18.00,Pharmacy: Rima's pills
+2026-09-05,Utilities,-30.00,"Internet subscription, September"
+2026-09-05,Dining,-19.00,Saturday manoushe
+2026-09-06,Generator,-25.00,Generator subscription - September
+2026-09-06,Groceries,-6.40,Bakery run
+2026-09-07,Utilities,-12.00,Water tanker
+2026-09-08,Insurance,-85.00,"Family health insurance premium, September"
+2026-09-08,Education,-80.00,"Layla's math tutor, September"
+2026-09-09,Utilities,-10.00,Mobile top-up for Elias
+2026-09-10,Groceries,-30.20,Weekly shop
+2026-09-11,Other,-26.00,Diapers
+2026-09-12,Remittance,250.00,Tony's transfer from Montreal - September
+2026-09-12,Family support,-100.00,Sent to Aunt Hanan for her winter oil
+2026-09-13,Fuel,-23.00,Petrol
+2026-09-14,Dining,-22.00,Sunday lunch
+2026-09-15,Family support,-60.00,"Aunt Hanan's monthly help, September"
+2026-09-16,Groceries,-31.80,Weekly shop
+2026-09-17,Entertainment,-14.00,"Park with Tala, who now walks"
+2026-09-19,Fuel,-22.00,Petrol
+2026-09-20,Utilities,-15.00,EDL electricity bill - September
+2026-09-20,Clothing,-38.00,Tala's first proper shoes
+2026-09-22,Groceries,-29.80,Weekly shop
+2026-09-24,Utilities,-8.00,Mobile top-up for Rima
+2026-09-25,Health,-15.50,Pharmacy: vitamin D
+2026-09-26,Groceries,-7.50,Bakery run
+2026-09-28,Salary,1000.00,Elias's school salary - September
+2026-09-28,Salary,520.00,"Joe's second salary, he gives half to the house"
+2026-09-29,Salary,600.00,"Rima's pharmacy salary, September"
+2026-09-29,Savings,-150.00,Savings top-up
+2026-09-30,Groceries,-31.00,Weekly shop
