@@ -88,6 +88,10 @@
     <value>Year</value>
     <comment>Reports period kind: one calendar year, or the last year.</comment>
   </data>
+  <data name="SampleDataTitleSuffix" xml:space="preserve">
+    <value> (sample data)</value>
+    <comment>Appended to the main window title in the demo window, which runs on throwaway sample data. Keep the leading space.</comment>
+  </data>
   <data name="TotalRow" xml:space="preserve">
     <value>Total</value>
     <comment>Label of the last row of the Reports table, which sums each period column.</comment>

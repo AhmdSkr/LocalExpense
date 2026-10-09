@@ -22,6 +22,7 @@ Built with .NET 10, Windows Forms, Entity Framework Core (SQLite) and [ScottPlot
   - a table of each category's net per day, month or year,
   - a line chart of income, expenses and net,
   - a bar chart of income against expenses.
+- **Sample data window.** Try everything on three years of a fictional family's money without touching your own data ([below](#sample-data)).
 - **CSV import and sample data generator** in a small command-line tool ([below](#command-line-tool)).
 
 ## Screenshots
@@ -54,15 +55,17 @@ On first launch, the database is created and migrated at `%LocalAppData%\LocalEx
 
 ## Sample data
 
-[`lebanon-family-expenses.csv`](lebanon-family-expenses.csv) holds 1,383 transactions, from October 2023 to September 2026, of the Khourys, a fictional family in Zahlé. [`LebanonFamilyStory.md`](LebanonFamilyStory.md) tells the story behind the numbers: a used car, a newborn, a funeral, a solar panel. The data is realistic enough to make the reports worth looking at.
+[`samples/lebanon-family-expenses.csv`](samples/lebanon-family-expenses.csv) holds 1,383 transactions, from October 2023 to September 2026, of the Khourys, a fictional family in Zahlé. [`samples/LebanonFamilyStory.md`](samples/LebanonFamilyStory.md) tells the story behind the numbers: a used car, a newborn, a funeral, a solar panel. The data is realistic enough to make the reports worth looking at.
 
-To load it into the app, launch the app once so its database exists, close it, then run:
+**To try the app with it, click Sample data** in the main window. A second window opens titled "Local Expenses (sample data)", running on a throwaway copy of the sample in a temporary database. Your own data is never touched, and anything you change there is discarded when you close that window. The sample is built into the exe, and its dates are moved so they end last month, which keeps "Last month" and "Last year" in Reports full. Running the app with `--demo` opens the same window directly.
+
+To load the sample into your real database instead, launch the app once so its database exists, close it, then run:
 
 ```powershell
-dotnet run --project tools/LocalExpense.Cli -- import -i lebanon-family-expenses.csv -d "$env:LOCALAPPDATA\LocalExpense\localexpense.db"
+dotnet run --project tools/LocalExpense.Cli -- import -i samples/lebanon-family-expenses.csv -d "$env:LOCALAPPDATA\LocalExpense\localexpense.db"
 ```
 
-Importing adds rows and never replaces or merges them. Importing the same file twice adds every row twice, so try the sample on a database you don't mind filling up.
+Importing adds rows and never replaces or merges them. Importing the same file twice adds every row twice. The imported dates are not moved.
 
 ## Command-line tool
 
@@ -105,6 +108,7 @@ src/LocalExpense.Core    Models, Money, EF Core context and migrations, Transact
                          CSV export and import, period and report calculations
 tools/LocalExpense.Cli   Command-line import and sample data generator
 tests/LocalExpense.Tests xUnit tests against real SQLite, including concurrency
+samples                  The sample family's CSV (built into the app for the Sample data window) and their story
 docs/screenshots         The images in this README
 ```
 

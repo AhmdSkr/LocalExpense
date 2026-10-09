@@ -31,6 +31,8 @@
     </EmbeddedResource>
     <!-- ApplicationIcon only covers the exe in Explorer and the taskbar; the windows load their icon from here (FormHelpers.AppIcon). -->
     <EmbeddedResource Include="app.ico" LogicalName="LocalExpense.app.ico" />
+    <!-- The demo window's data (see Program.LoadSampleData), inside the exe so the Sample data button works wherever the exe is copied. -->
+    <EmbeddedResource Include="..\..\samples\lebanon-family-expenses.csv" LogicalName="LocalExpense.SampleData.csv" Link="samples\lebanon-family-expenses.csv" />
   </ItemGroup>
 
   <ItemGroup>

@@ -1,3 +1,5 @@
+using System.ComponentModel;
+using System.Diagnostics;
 using System.Text;
 using LocalExpense.Models;
 using LocalExpense.Services;
@@ -21,10 +23,15 @@ public partial class MainForm : Form
         transactionsGrid.CellFormatting += AmountCellFormatting;
     }
 
-    public MainForm(TransactionService service, IServiceScopeFactory scopeFactory) : this()
+    public MainForm(TransactionService service, IServiceScopeFactory scopeFactory, AppMode mode) : this()
     {
         this.service = service;
         this.scopeFactory = scopeFactory;
+        if (mode.IsDemo)
+        {
+            Text += Strings.SampleDataTitleSuffix;
+            sampleDataButton.Visible = false;
+        }
     }
 
     protected override async void OnLoad(EventArgs e)
@@ -50,6 +57,19 @@ public partial class MainForm : Form
 
     private async void reportsButton_Click(object? sender, EventArgs e) =>
         await RunGuardedAsync(ShowReports);
+
+    // A second copy of this exe with --demo: its own window on its own throwaway database, so it can never touch this window's data.
+    private void sampleDataButton_Click(object? sender, EventArgs e)
+    {
+        try
+        {
+            Process.Start(new ProcessStartInfo(Environment.ProcessPath!, "--demo") { UseShellExecute = false });
+        }
+        catch (Win32Exception ex)
+        {
+            MessageBox.Show(this, ex.Message, Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+    }
 
     private async void exportFilteredMenuItem_Click(object? sender, EventArgs e) =>
         await RunGuardedAsync(() => ExportAsync(filtered: true));

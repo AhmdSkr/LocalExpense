@@ -239,7 +239,16 @@ namespace LocalExpense {
                 return ResourceManager.GetString("PeriodYear", resourceCulture);
             }
         }
-        
+
+        /// <summary>
+        ///   Looks up a localized string similar to  (sample data).
+        /// </summary>
+        internal static string SampleDataTitleSuffix {
+            get {
+                return ResourceManager.GetString("SampleDataTitleSuffix", resourceCulture);
+            }
+        }
+
         /// <summary>
         ///   Looks up a localized string similar to Total.
         /// </summary>

@@ -138,6 +138,9 @@
   <data name="reportsButton.Text" xml:space="preserve">
     <value>&amp;Reports</value>
   </data>
+  <data name="sampleDataButton.Text" xml:space="preserve">
+    <value>&amp;Sample data</value>
+  </data>
   <data name="exportButton.Text" xml:space="preserve">
     <value>E&amp;xport ▾</value>
   </data>
