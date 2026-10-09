@@ -12,6 +12,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AllCategories" xml:space="preserve">
+    <value>All categories</value>
+    <comment>First entry of the category filter; selecting it removes the category restriction.</comment>
+  </data>
   <data name="AmountMustBePositive" xml:space="preserve">
     <value>Enter an amount greater than zero.</value>
   </data>
@@ -28,6 +32,9 @@
   <data name="EditTransactionTitle" xml:space="preserve">
     <value>Edit transaction</value>
     <comment>Window title of the transaction dialog when editing an existing row.</comment>
+  </data>
+  <data name="EndBeforeStart" xml:space="preserve">
+    <value>The end date is before the start date.</value>
   </data>
   <data name="TransactionGone" xml:space="preserve">
     <value>That transaction no longer exists.</value>

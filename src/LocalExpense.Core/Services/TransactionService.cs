@@ -33,6 +33,25 @@ public class TransactionService(IDbContextFactory<AppDbContext> factory)
             .ToListAsync(ct);
     }
 
+    /// <summary>
+    /// Inclusive on both ends; a null bound means no limit on that side. A null <paramref name="category"/>
+    /// means every category; otherwise it must match exactly, the same way <see cref="GetCategoriesAsync"/> lists them.
+    /// </summary>
+    public async Task<List<Transaction>> GetFilteredAsync(DateOnly? from, DateOnly? to, string? category = null, CancellationToken ct = default)
+    {
+        await using var db = await factory.CreateDbContextAsync(ct);
+        var query = db.Transactions.AsNoTracking();
+        if (from is { } start)
+            query = query.Where(t => t.Date >= start);
+        if (to is { } end)
+            query = query.Where(t => t.Date <= end);
+        if (category is not null)
+            query = query.Where(t => t.Category == category);
+        return await query
+            .OrderByDescending(t => t.Date).ThenByDescending(t => t.Id)
+            .ToListAsync(ct);
+    }
+
     public async Task<Transaction> AddAsync(Transaction transaction, CancellationToken ct = default)
     {
         Validate(transaction);

@@ -43,9 +43,20 @@
             addButton = new Button();
             editButton = new Button();
             deleteButton = new Button();
+            filterPanel = new FlowLayoutPanel();
+            fromLabel = new Label();
+            fromPicker = new DateTimePicker();
+            toLabel = new Label();
+            toPicker = new DateTimePicker();
+            categoryFilterLabel = new Label();
+            categoryFilter = new ComboBox();
+            clearFilterButton = new Button();
+            errorProvider = new ErrorProvider(components);
             ((System.ComponentModel.ISupportInitialize)transactionsGrid).BeginInit();
             ((System.ComponentModel.ISupportInitialize)transactionBindingSource).BeginInit();
             toolbarPanel.SuspendLayout();
+            filterPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)errorProvider).BeginInit();
             SuspendLayout();
             // 
             // transactionsGrid
@@ -62,8 +73,9 @@
             transactionsGrid.ReadOnly = true;
             transactionsGrid.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             transactionsGrid.Size = new Size(800, 450);
-            transactionsGrid.TabIndex = 3;
+            transactionsGrid.TabIndex = 2;
             transactionsGrid.CellDoubleClick += transactionsGrid_CellDoubleClick;
+            transactionsGrid.DataError += transactionsGrid_DataError;
             transactionsGrid.SelectionChanged += transactionsGrid_SelectionChanged;
             //
             // toolbarPanel
@@ -111,6 +123,102 @@
             resources.ApplyResources(deleteButton, "deleteButton");
             deleteButton.UseVisualStyleBackColor = true;
             deleteButton.Click += deleteButton_Click;
+            //
+            // filterPanel
+            //
+            filterPanel.AutoSize = true;
+            filterPanel.Controls.Add(fromLabel);
+            filterPanel.Controls.Add(fromPicker);
+            filterPanel.Controls.Add(toLabel);
+            filterPanel.Controls.Add(toPicker);
+            filterPanel.Controls.Add(categoryFilterLabel);
+            filterPanel.Controls.Add(categoryFilter);
+            filterPanel.Controls.Add(clearFilterButton);
+            filterPanel.Dock = DockStyle.Top;
+            filterPanel.Location = new Point(0, 38);
+            filterPanel.Name = "filterPanel";
+            filterPanel.Padding = new Padding(6, 0, 6, 3);
+            filterPanel.Size = new Size(800, 35);
+            filterPanel.TabIndex = 1;
+            //
+            // fromLabel
+            //
+            fromLabel.Anchor = AnchorStyles.Left;
+            fromLabel.AutoSize = true;
+            fromLabel.Location = new Point(9, 9);
+            fromLabel.Name = "fromLabel";
+            fromLabel.Size = new Size(38, 15);
+            fromLabel.TabIndex = 0;
+            resources.ApplyResources(fromLabel, "fromLabel");
+            //
+            // fromPicker
+            //
+            fromPicker.Checked = false;
+            fromPicker.Format = DateTimePickerFormat.Short;
+            fromPicker.Location = new Point(53, 3);
+            fromPicker.Name = "fromPicker";
+            fromPicker.ShowCheckBox = true;
+            fromPicker.Size = new Size(125, 23);
+            fromPicker.TabIndex = 1;
+            fromPicker.ValueChanged += fromPicker_ValueChanged;
+            //
+            // toLabel
+            //
+            toLabel.Anchor = AnchorStyles.Left;
+            toLabel.AutoSize = true;
+            toLabel.Location = new Point(184, 9);
+            toLabel.Name = "toLabel";
+            toLabel.Size = new Size(23, 15);
+            toLabel.TabIndex = 2;
+            resources.ApplyResources(toLabel, "toLabel");
+            //
+            // toPicker
+            //
+            toPicker.Checked = false;
+            toPicker.Format = DateTimePickerFormat.Short;
+            toPicker.Location = new Point(213, 3);
+            toPicker.Margin = new Padding(3, 3, 22, 3);
+            toPicker.Name = "toPicker";
+            toPicker.ShowCheckBox = true;
+            toPicker.Size = new Size(125, 23);
+            toPicker.TabIndex = 3;
+            toPicker.ValueChanged += toPicker_ValueChanged;
+            //
+            // categoryFilterLabel
+            //
+            categoryFilterLabel.Anchor = AnchorStyles.Left;
+            categoryFilterLabel.AutoSize = true;
+            categoryFilterLabel.Location = new Point(363, 9);
+            categoryFilterLabel.Name = "categoryFilterLabel";
+            categoryFilterLabel.Size = new Size(58, 15);
+            categoryFilterLabel.TabIndex = 4;
+            resources.ApplyResources(categoryFilterLabel, "categoryFilterLabel");
+            //
+            // categoryFilter
+            //
+            categoryFilter.DropDownStyle = ComboBoxStyle.DropDownList;
+            categoryFilter.FormattingEnabled = true;
+            categoryFilter.Location = new Point(427, 3);
+            categoryFilter.Name = "categoryFilter";
+            categoryFilter.Size = new Size(150, 23);
+            categoryFilter.TabIndex = 5;
+            categoryFilter.SelectedIndexChanged += categoryFilter_SelectedIndexChanged;
+            //
+            // clearFilterButton
+            //
+            clearFilterButton.AutoSize = true;
+            clearFilterButton.Location = new Point(583, 3);
+            clearFilterButton.Name = "clearFilterButton";
+            clearFilterButton.Size = new Size(75, 25);
+            clearFilterButton.TabIndex = 6;
+            resources.ApplyResources(clearFilterButton, "clearFilterButton");
+            clearFilterButton.UseVisualStyleBackColor = true;
+            clearFilterButton.Click += clearFilterButton_Click;
+            //
+            // errorProvider
+            //
+            errorProvider.BlinkStyle = ErrorBlinkStyle.NeverBlink;
+            errorProvider.ContainerControl = this;
             //
             // idColumn
             // 
@@ -165,6 +273,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(transactionsGrid);
+            Controls.Add(filterPanel);
             Controls.Add(toolbarPanel);
             Name = "MainForm";
             resources.ApplyResources(this, "$this");
@@ -172,6 +281,9 @@
             ((System.ComponentModel.ISupportInitialize)transactionBindingSource).EndInit();
             toolbarPanel.ResumeLayout(false);
             toolbarPanel.PerformLayout();
+            filterPanel.ResumeLayout(false);
+            filterPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)errorProvider).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -189,5 +301,14 @@
         private Button addButton;
         private Button editButton;
         private Button deleteButton;
+        private FlowLayoutPanel filterPanel;
+        private Label fromLabel;
+        private DateTimePicker fromPicker;
+        private Label toLabel;
+        private DateTimePicker toPicker;
+        private Label categoryFilterLabel;
+        private ComboBox categoryFilter;
+        private Button clearFilterButton;
+        private ErrorProvider errorProvider;
     }
 }

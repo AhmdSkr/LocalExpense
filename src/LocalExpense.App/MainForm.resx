@@ -150,4 +150,16 @@
   <data name="$this.Text" xml:space="preserve">
     <value>Local Expenses</value>
   </data>
+  <data name="fromLabel.Text" xml:space="preserve">
+    <value>&amp;From:</value>
+  </data>
+  <data name="toLabel.Text" xml:space="preserve">
+    <value>&amp;To:</value>
+  </data>
+  <data name="categoryFilterLabel.Text" xml:space="preserve">
+    <value>Cate&amp;gory:</value>
+  </data>
+  <data name="clearFilterButton.Text" xml:space="preserve">
+    <value>&amp;Clear</value>
+  </data>
 </root>

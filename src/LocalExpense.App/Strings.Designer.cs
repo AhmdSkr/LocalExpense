@@ -61,6 +61,17 @@ namespace LocalExpense {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to All categories.
+        /// </summary>
+        internal static string AllCategories
+        {
+            get
+            {
+                return ResourceManager.GetString("AllCategories", resourceCulture);
+            }
+        }
+
+        /// <summary>
         ///   Looks up a localized string similar to Enter an amount greater than zero..
         /// </summary>
         internal static string AmountMustBePositive {
@@ -105,6 +116,17 @@ namespace LocalExpense {
             }
         }
         
+        /// <summary>
+        ///   Looks up a localized string similar to The end date is before the start date..
+        /// </summary>
+        internal static string EndBeforeStart
+        {
+            get
+            {
+                return ResourceManager.GetString("EndBeforeStart", resourceCulture);
+            }
+        }
+
         /// <summary>
         ///   Looks up a localized string similar to That transaction no longer exists..
         /// </summary>
