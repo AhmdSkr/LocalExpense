@@ -17,6 +17,7 @@ public partial class MainForm : Form
     public MainForm()
     {
         InitializeComponent();
+        Icon = FormHelpers.AppIcon;
         transactionsGrid.CellFormatting += AmountCellFormatting;
     }
 

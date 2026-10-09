@@ -4,6 +4,9 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net10.0-windows</TargetFramework>
     <RootNamespace>LocalExpense</RootNamespace>
+    <!-- The exe people download is LocalExpense.exe. Resource names follow RootNamespace, so they do not change with it. -->
+    <AssemblyName>LocalExpense</AssemblyName>
+    <ApplicationIcon>app.ico</ApplicationIcon>
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
@@ -26,6 +29,8 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Strings.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <!-- ApplicationIcon only covers the exe in Explorer and the taskbar; the windows load their icon from here (FormHelpers.AppIcon). -->
+    <EmbeddedResource Include="app.ico" LogicalName="LocalExpense.app.ico" />
   </ItemGroup>
 
   <ItemGroup>

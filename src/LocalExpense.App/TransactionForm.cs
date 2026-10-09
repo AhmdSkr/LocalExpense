@@ -15,6 +15,7 @@ public partial class TransactionForm : Form
     public TransactionForm()
     {
         InitializeComponent();
+        Icon = FormHelpers.AppIcon;
 
         // Must run before SetTransaction can assign Value, or a large amount exceeds the default Maximum.
         amountInput.DecimalPlaces = Money.Exponent;

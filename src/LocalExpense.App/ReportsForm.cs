@@ -52,6 +52,7 @@ public partial class ReportsForm : Form
     public ReportsForm()
     {
         InitializeComponent();
+        Icon = FormHelpers.AppIcon;
     }
 
     public ReportsForm(TransactionService service) : this()

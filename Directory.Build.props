@@ -1,0 +1,12 @@
+<Project>
+
+  <!-- The one place the version lives. The release workflow refuses a tag that does not match it. -->
+  <PropertyGroup>
+    <Version>0.1.0</Version>
+    <Product>LocalExpense</Product>
+    <Authors>AhmdSkr</Authors>
+    <Copyright>Public domain (The Unlicense)</Copyright>
+    <RepositoryUrl>https://github.com/AhmdSkr/LocalExpense</RepositoryUrl>
+  </PropertyGroup>
+
+</Project>

@@ -2,6 +2,12 @@ namespace LocalExpense;
 
 internal static class FormHelpers
 {
+    /// <summary>
+    /// The app icon with all its sizes, for every window's title bar and Alt+Tab. WinForms has no application-wide default form icon,
+    /// so each form assigns this in its constructor (in code, not in the designer file).
+    /// </summary>
+    public static Icon AppIcon { get; } =
+        new(typeof(FormHelpers).Assembly.GetManifestResourceStream("LocalExpense.app.ico")!);
     /// <summary>Runs an operation started from the UI and shows any failure in a message box owned by <paramref name="form"/>.</summary>
     public static async Task TryAsync(this Form form, Func<Task> operation)
     {
